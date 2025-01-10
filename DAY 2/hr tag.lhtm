@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR tag in html</title>
+  </head>
+
+  <body>
+    <h1>Vedant Hande</h1>
+    <img src="HP.jpg" alt="img" height="100" />
+    <hr />
+    <h2>Education</h2>
+    <ul>
+      <li><b>10th </b>87.00</li>
+      <li><b>Information Technology</b>TY</li>
+    </ul>
+    <hr />
+    <h2>skill</h2>
+    <ul>
+      <li>C</li>
+      <li>CPP</li>
+      <li>java</li>
+      <li>PHP</li>
+    </ul>
+    <hr />
+    <h2>Hobbie</h2>
+    <ul>
+      <li>coding</li>
+      <li>readign</li>
+    </ul>
+    <hr />
+    <p>made by @vedant Hande &#9829;</p>
+  </body>
+</html>
