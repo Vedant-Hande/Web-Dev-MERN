@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2</title>
+  </head>
+<body>
+    <form action="/sercer">
+      <div>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter Your Name"
+          name="name" />
+        <br /><br />
+
+        sex:
+        <input type="radio" id="Male" name="sex" />
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="sex" />
+        <label for="Female">Female</label>
+        <br /><br />
+
+        <label for="country">Country: </label>
+        <select name="country" id="country  ">
+          <option value="">Selct an Option</option>
+          <option value="I">India</option>
+          <option value="A">America</option>
+          <option value="E">England</option>
+        </select>
+        <br /><br />
+
+        <label for="msg">Massage :</label>
+        <br />
+        <textarea
+          name="msg"
+          id="msg"
+          rows="5"
+          cols="35"
+          placeholder="Enter Your Massage -"></textarea>
+        <br />
+        <input type="checkbox" name="subscribe" id="subscribe" />
+        <label for="subscribe">Subscribe</label>
+        <br />
+        <br />
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
