@@ -5,7 +5,6 @@ h1 {
   text-decoration-color: black;
   font-weight: 900;
   letter-spacing: 5px;
-  
 }
 
 p {
@@ -14,6 +13,7 @@ p {
   background-color: thistle;
   font-weight: bold;
   line-height: 2;
+  font-family:cursive;
 }
 
 h2 {
