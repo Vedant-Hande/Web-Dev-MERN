@@ -1,13 +1,17 @@
 button {
   color: violet;
+  background-color: steelblue;
 }
 
 p {
   color: green;
-}
+  background-color:yellow ;
+}   
 h2 {
   color: red;
+  background-color: black;
 }
 ul {
   color: blue;
+  background-color: pink;
 }
