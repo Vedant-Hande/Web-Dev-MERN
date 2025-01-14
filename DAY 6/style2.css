@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: black;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+p {
+  color: blueviolet;
+  font-size: 20px;
+  background-color: thistle;
+  font-weight: bold;
+  line-height: 2;
+}
+
+h2 {
+  color: green;
+  text-align: center;
+  text-decoration: double overline;
+  text-decoration-color: black;
+}
+h3 {
+  text-align: center;
+  color: blue;
+  text-decoration: dashed line-through;
+  text-decoration-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: darkmagenta;
+  font-weight: bold;
+  font-size: 23px;
+}
