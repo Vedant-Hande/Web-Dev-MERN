@@ -1,13 +1,13 @@
 h2 {
-  color: orange;
+  color: #ffa500;
 }
 
 button {
-  background-color: blue;
-  color: white;
+  background-color: #0000ff;
+  color: #fff;
 }
 
 p {
-  color: white;
-  background-color: black;
+  color: #fff;
+  background-color: #000;
 }
