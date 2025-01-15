@@ -1,0 +1,24 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.c1 {
+  color: #1b74e4;
+}
+
+#sbtn {
+  background-color: black;
+  color: white;
+}
+.ubtn {
+  background-color: aqua;
+  font-size: 15px;
+}
+
+#l1 {
+  font-weight: 800;
+  font-size: 20px;
+}
+
