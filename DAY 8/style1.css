@@ -12,16 +12,17 @@ h1 {
   color: blueviolet;
 }
 
-div input {
+div > input {
   /* letter-spacing: 30px; */
   background-color: bisque;
 }
 
-nav ul li a {
+nav a {
   color: cadetblue;
 }
 
-nav ul li {
+/* it is and disadvantage of cild  */
+nav > li {
   list-style-type: decimal;
   color: chocolate;
 }
@@ -48,16 +49,23 @@ h3 {
   color: teal;
 }
 
-
-.btn2{
-    color:blueviolet;
-    background-color:cadetblue;
+.btn2 {
+  color: blueviolet;
+  background-color: cadetblue;
 }
 
-main{
-    background-color:bisque;
+main {
+  background-color: bisque;
 }
 
-header{
-    background-color:darkslategrey;
+header {
+  background-color: darkslategrey;
+}
+
+input[type="text"] {
+  color: blue;
+}
+
+input[type="password"] {
+  color: blue;
 }
