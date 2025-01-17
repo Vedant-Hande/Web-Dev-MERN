@@ -1,72 +1,71 @@
 h1 {
-    color: red;
-  }
-  
-  #login {
-    background-color: antiquewhite;
-    color: blueviolet;
-  }
-  
-  #signup {
-    background-color: antiquewhite;
-    color: blueviolet;
-  }
-  
-  div > input {
-    /* letter-spacing: 30px; */
-    background-color: bisque;
-  }
-  
-  nav a {
-    color: cadetblue;
-  }
-  
-  /* it is and disadvantage of cild  */
-  nav > li {
-    list-style-type: decimal;
-    color: chocolate;
-  }
-  
-  .follow {
-    color: darkmagenta;
-    letter-spacing: 2px;
-  }
-  
-  main > p {
-    line-height: 2;
-    font-weight: 900;
-    background-color: yellowgreen;
-    color: steelblue;
-  }
-  
-  h3 {
-    letter-spacing: 2px;
-    color: brown;
-  }
-  
-  .btn1 {
-    background-color: #fff;
-    color: teal;
-  }
-  
-  .btn2 {
-    color: blueviolet;
-    background-color: cadetblue;
-  }
-  
-  main {
-    background-color: bisque;
-  }
-  
-  header {
-    background-color: darkslategrey;
-  }
-  
-  input[type="text"] {
-    color: blue;
-  }
-  
-  input[type="password"] {
-    color: blue;
-  }
-  
+  color: red;
+}
+
+#login {
+  background-color: antiquewhite;
+  color: blueviolet;
+}
+
+#signup {
+  background-color: antiquewhite;
+  color: blueviolet;
+}
+
+div > input {
+  /* letter-spacing: 30px; */
+  background-color: bisque;
+}
+
+nav a {
+  color: cadetblue;
+}
+
+nav ul li {
+  list-style-type: decimal;
+  color: chocolate;
+}
+
+main {
+  background-color: bisque;
+}
+
+.follow {
+  color: darkmagenta;
+  letter-spacing: 2px;
+}
+
+input[type="text"] {
+  color: blue;
+}
+
+input[type="password"] {
+  color: blue;
+}
+
+main > p {
+  line-height: 2;
+  font-weight: 900;
+  background-color: yellowgreen;
+  color: steelblue;
+}
+
+h3 {
+  letter-spacing: 2px;
+  color: brown;
+}
+
+.btn1 {
+  background-color: #fff;
+  color: teal;
+}
+
+.btn2 {
+  color: blueviolet;
+  background-color: cadetblue;
+}
+
+header {
+  background-color: darkslategrey;
+}
+
