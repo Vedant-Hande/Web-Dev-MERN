@@ -1,3 +1,9 @@
+*{
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 h1 {
   color: red;
 }
@@ -67,5 +73,29 @@ h3 {
 
 header {
   background-color: darkslategrey;
+}
+
+.btn1:hover {
+  color: bisque;
+  background-color: blueviolet;
+}
+
+.btn2:hover {
+  color: blueviolet;
+  background-color: chocolate;
+}
+
+li a:active {
+  background-color: aquamarine;
+}
+
+p a:active {
+  background-color: #fff;
+  font-style: italic;
+}
+
+*::selection{
+  background-color: yellow;
+  color:crimson
 }
 
