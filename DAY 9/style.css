@@ -97,3 +97,7 @@ p a:active {
   color: crimson;
 }
 
+p::first-letter {
+  color: blue;
+  text-transform: lowercase;
+}
