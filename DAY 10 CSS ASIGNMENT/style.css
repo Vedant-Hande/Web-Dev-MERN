@@ -1,0 +1,39 @@
+* {
+  text-align: center;
+}
+
+#mainTopic {
+  color: blue;
+}
+
+.font-head {
+  font-family: "Georgia", sans-serif;
+}
+
+.color-para {
+  color: white;
+  background-color: cornflowerblue;
+}
+
+div button {
+  background-color: purple;
+  color: azure;
+}
+
+div button:hover {
+  background-color: yellow;
+  color: blue;
+}
+
+p:nth-child(2n + 1) {
+  color: yellow;
+}
+
+#yes:checked + label {
+  color: red;
+}
+
+h1::first-letter {
+  color: red;
+}
+
