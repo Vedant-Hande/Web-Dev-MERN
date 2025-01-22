@@ -3,8 +3,8 @@
   padding: 0;
 }
 ::selection {
-  color:blue ;
-  background-color:magenta;;
+  color: blue;
+  background-color: magenta;
 }
 .box {
   height: 130px;
@@ -35,7 +35,7 @@ h1 {
   color: bisque;
   padding: 15px;
   margin: 23px;
-  margin-left: 23px;
+  /* margin-left: 23px; */
   border-radius: 15px;
   font-size: 20px;
 }
