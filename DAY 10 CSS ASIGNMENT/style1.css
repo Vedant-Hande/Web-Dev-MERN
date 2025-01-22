@@ -1,16 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .box {
-  height: 200px;
-  width: 500px;
+  height: 130px;
+  width: 800px;
   color: blue;
   background-color: aquamarine;
   border: 2px solid black;
-  padding: 50px;
-  margin: 50px;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 20px;
 }
 
 h1 {
   color: red;
-  border:2px dashed black;
-  border-right: 5px solid blue;
-  
+  border: 2px dashed black;
+  border-right: 9px solid blue;
+  border-left: 9px solid blue;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
