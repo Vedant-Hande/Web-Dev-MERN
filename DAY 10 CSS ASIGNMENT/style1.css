@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+::selection {
+  color:blue ;
+  background-color:magenta;;
+}
 .box {
   height: 130px;
   width: 800px;
