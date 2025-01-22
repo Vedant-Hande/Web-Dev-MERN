@@ -1,9 +1,16 @@
-div {
+.box {
   height: 200px;
   width: 500px;
   color: blue;
   background-color: aquamarine;
   border: 2px solid black;
   padding: 50px;
-  margin: 50PX;
+  margin: 50px;
+}
+
+h1 {
+  color: red;
+  border:2px dashed black;
+  border-right: 5px solid blue;
+  
 }
