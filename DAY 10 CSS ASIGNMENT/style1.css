@@ -14,7 +14,7 @@
 }
 
 h1 {
-  color: red;
+  color: rgb(7, 7, 251);
   border: 2px dashed black;
   border-right: 9px solid blue;
   border-left: 9px solid blue;
@@ -24,4 +24,19 @@ h1 {
   font-size: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#btn1 {
+  background-color: blue;
+  color: bisque;
+  padding: 15px;
+  margin: 23px;
+  margin-left: 23px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+#btn1:hover {
+  background-color: yellow;
+  color: blue;
 }
