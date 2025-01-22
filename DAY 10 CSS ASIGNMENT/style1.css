@@ -1,4 +1,9 @@
 div {
   height: 200px;
   width: 500px;
+  color: blue;
+  background-color: aquamarine;
+  border: 2px solid black;
+  padding: 50px;
+  margin: 50PX;
 }
