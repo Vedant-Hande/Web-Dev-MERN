@@ -13,8 +13,11 @@
   background-color: aquamarine;
   border: 2px solid black;
   padding: 25px;
+  padding-top: 50px;
   margin: 25px;
+  /* margin-top: 40px; */
   border-radius: 20px;
+  text-align: center;
 }
 
 h1 {
@@ -38,6 +41,7 @@ h1 {
   /* margin-left: 23px; */
   border-radius: 15px;
   font-size: 20px;
+  /* text-align: left; */
 }
 
 #btn1:hover {
