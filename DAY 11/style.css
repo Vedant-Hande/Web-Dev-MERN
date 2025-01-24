@@ -6,4 +6,7 @@ h1 {
 span {
   /* display: block; */
   background-color: palegreen;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
 }
