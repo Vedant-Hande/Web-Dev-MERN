@@ -1,9 +1,9 @@
 h1 {
-  display: inline;
+  /* display: inline; */
   background-color: yellow;
 }
 
 span {
-  display: block;
+  /* display: block; */
   background-color: palegreen;
 }
