@@ -1,0 +1,19 @@
+.prac {
+  background-color: aquamarine;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 25px;
+  /* margin-: 50px; */
+  padding: 27px;
+
+  display: inline-block;
+  /* justify-content: center; */
+
+  /* align-items: center; */
+}
+/* 
+* {
+  margin: 0;
+  padding: 0;
+} */
