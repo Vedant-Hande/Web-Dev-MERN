@@ -18,7 +18,7 @@ h1 {
 }
 
 .inner {
-  /* margin: 40px; */
+  margin: 10px;
   border: 2px solid black;
   /* padding: 50px; */
   height: 33.33%;
