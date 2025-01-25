@@ -1,3 +1,6 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
 h1 {
   border: 2px solid black;
   padding: 22px;
@@ -12,16 +15,19 @@ h1 {
   border: 2px solid black;
   /* padding: 40px; */
   margin: 30px;
-  height: 400px;
+  height: 500px;
   width: 400px;
+  font-size: 35px;
+  padding: 0.5em;
   background-color: brown;
 }
 
 .inner {
-  margin: 10px;
+  margin: 25px;
   border: 2px solid black;
-  /* padding: 50px; */
-  height: 33.33%;
+  height: 23.33%;
   width: 33.33%;
+  font-size: 40px;
+  padding: 0.5em;
   background-color: gray;
 }
