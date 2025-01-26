@@ -1,0 +1,27 @@
+.alpha {
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    /* opacity: 0.5; */
+  }
+  .opacity {
+    background-color: rgba(0, 255, 0, 0.7);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  .alpha:hover {
+    opacity: 0.2;
+    border: 5px solid black;
+    width: 200px;
+  }
+
+  button {
+    color: rgba(0, 243, 0, 0.8);
+    opacity: 0.5;
+    background-color: blueviolet;
+  }
+  button:hover {
+    opacity: 1;
+  }
