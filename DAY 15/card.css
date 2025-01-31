@@ -1,0 +1,19 @@
+.card {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 10px;
+}
+img {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  /* height: 50%; */
+  /* border-radius: 50% 20% / 10% 40%; */
+}
+
+.desc {
+  padding-left: 8px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

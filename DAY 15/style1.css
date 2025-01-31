@@ -1,8 +1,10 @@
 .bgimg {
   height: 500px;
-  width: 70vw;
+  width: 50vh;
   background-color: black;
   border: 2px solid black;
-  margin: 25px auto;
-  background-image: url();
+  margin: 25px;
+  background-image: url(Darléte\ de\ Siqueira\ _\ Photography\ _\ Edits….jpeg);
+  background-size: cover;
+  display: inline-block;
 }
