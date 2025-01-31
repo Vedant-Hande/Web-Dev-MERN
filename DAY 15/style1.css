@@ -1,0 +1,8 @@
+.bgimg {
+  height: 500px;
+  width: 70vw;
+  background-color: black;
+  border: 2px solid black;
+  margin: 25px auto;
+  background-image: url();
+}
