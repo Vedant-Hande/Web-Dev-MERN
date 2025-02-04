@@ -1,9 +1,61 @@
-div {
-  width: 100px;
-  height: 100px;
-  background-color: gray;
-  display: inline-block;
-  text-align: center;
+.face {
+  width: 400px;
+  height: 400px;
+  background-color: yellow;
+  border-radius: 50%;
   border: 2px solid black;
-  margin: 20px;
+  margin: 75px auto;
+  transition: 1s ease-in-out;
+  /* border: 2px solid black; */
+  /* position: absolute; */
+}
+
+.mouth {
+  width: 200px;
+  height: 80px;
+  background-color: red;
+  border-radius: 0 0 50px 50px;
+  position: relative;
+  top: 160px;
+  left: 100px;
+  border: 2px solid black;
+  transition: 1s ease-in-out;
+}
+
+.l-eye,
+.r-eye {
+  border: 2px solid yellow;
+  width: 100px;
+  height: 75px;
+  background-color: black;
+  border-radius: 100px;
+  display: inline-block;
+  position: relative;
+  top: 90px;
+  left: 65px;
+  transition: 1s ease-in-out;
+}
+
+.r-eye {
+  left: 126px;
+}
+
+.face:hover .mouth {
+  background-color: blueviolet;
+  border-radius: 50px 50px 0 0;
+  border: 2px solid yellow;
+}
+.face:hover .l-eye {
+  background-color: red;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.face:hover .r-eye {
+  background-color: red;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.face:hover {
+  background-color: black;
+  border: 4px solid yellow;
 }
