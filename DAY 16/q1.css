@@ -1,3 +1,9 @@
+.space {
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
 /* Qs1. Add a 2s transition on box1 for width changes.
        It should have 'ease-in' speed curve & 0.5s delay  */
 
@@ -6,6 +12,7 @@
   height: 100px;
   background: green;
   transition: 2s ease-in 0.5s;
+  border-radius: 32px;
 }
 
 #box1:hover {
@@ -20,6 +27,7 @@
   height: 100px;
   background: red;
   transition: 2s ease-in 0.5s;
+  border-radius: 48px 0;
 }
 
 #box2:hover {
@@ -33,6 +41,7 @@
   height: 100px;
   background: lightblue;
   transition: 1s ease-in 0.5s;
+  border-radius: 0 48px;
 }
 
 #box3:hover {
@@ -48,6 +57,7 @@
   height: 100px;
   background: lightgreen;
   transition: 1s ease-in 0.5s;
+  border-radius: 0 0 0 32px;
 }
 
 #box4:hover {
@@ -63,6 +73,8 @@
   width: 200px;
   height: 200px;
   background: pink;
+  border-radius: 64px 48px 16px 98px;
+  transition: 1s ease-in 0.5s;
 }
 
 #myPic:hover {
