@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <style>
+      .container {
+        display: flex;
+        height: 400px;
+        width: 80vw;
+        margin: 50px auto;
+        background-color: skyblue;
+        text-align: center;
+        font-size: 25px;
+        flex-direction: row-reverse;
+        transition: 5s;
+      }
+
+      .container:hover {
+        flex-direction: row;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        /* margin: 10px; */
+        /* background-color: skyblue; */
+      }
+      .red {
+        background-color: red;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .indigo {
+        background-color: indigo;
+      }
+      .violet {
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red">1</div>
+      <div class="box orange">2</div>
+      <div class="box yellow">3</div>
+      <div class="box green">4</div>
+      <div class="box blue">5</div>
+      <div class="box indigo">6</div>
+      <div class="box violet">7</div>
+    </div>
+  </body>
+</html>
