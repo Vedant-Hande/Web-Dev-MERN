@@ -7,38 +7,43 @@
     <style>
       .container {
         height: 600px;
-        width: 75vw;
+        width: 60vw;
         margin: 20px auto;
         background-color: skyblue;
         text-align: center;
         font-size: 25px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        /* align-items: flex-start; */
-        align-content: flex-end;
+        /* align-items: flex-end; */
+        /* align-content: space-around; */
         transition: 5s;
       }
 
       .box {
-        width: 150px;
-        height: 100px;
+        width: 10px;
+        height: 10px;
         padding: 10px;
         /* margin: 10px; */
       }
 
       .red {
         /* border-radius: 48px 0; */
+        /* align-self: center; */
         background-color: red;
         height: 100px;
       }
       .orange {
         background-color: orange;
+        flex-grow: 3;
+        min-width: 400px;
+        max-width: 500px;
         /* border-radius: 0 0 0 32px; */
       }
       .yellow {
         background-color: yellow;
+        flex-grow: 3;
       }
       .green {
         background-color: green;
@@ -46,6 +51,7 @@
       }
       .blue {
         background-color: blue;
+        flex-grow: 2;
       }
       .indigo {
         background-color: indigo;
