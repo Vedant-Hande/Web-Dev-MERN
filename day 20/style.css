@@ -37,6 +37,7 @@ img {
 }
 
 #pets {
+    /* transition: all 1s; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -47,4 +48,14 @@ h4 {
   color: #3c787e;
   margin: 25px;
   /* border: 2px solid #3c787e; */
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 300px;
+  }
+  #pets {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
 }
