@@ -19,8 +19,8 @@
   width: 600px;
 }
 
-/* Qs2. Using transform, move box2 200px to the right  & 
-200px down. Also rotate it 90deg.*/
+/* Qs2. Using transform, move box2 400px to the right  & 
+400px down. Also rotate it 90deg.*/
 
 #box2 {
   width: 100px;
@@ -31,10 +31,10 @@
 }
 
 #box2:hover {
-  transform: translate(200px, 200px) rotate(90deg);
+  transform: translate(400px, 400px) rotate(90deg);
 }
 
-/* Qs3. Using transform, skew box3 20deg along the x axis.*/
+/* Qs3. Using transform, skew box3 40deg along the x axis.*/
 
 #box3 {
   width: 100px;
@@ -45,7 +45,7 @@
 }
 
 #box3:hover {
-  transform: skewX(20deg);
+  transform: skewX(40deg);
   margin: 25px;
 }
 
@@ -70,8 +70,8 @@
               "myPic". Also, set transparency of this div to 50%. */
 
 #myPic {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background: pink;
   border-radius: 64px 48px 16px 98px;
   transition: 1s ease-in 0.5s;

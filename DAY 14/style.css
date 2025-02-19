@@ -13,8 +13,8 @@ div {
 #one:hover {
   /* transition: 3s ease-in-out 0.2s; */
   /* padding: 25px; */
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background-color: blue;
 }
 
@@ -29,8 +29,8 @@ div {
 
 #tow:hover {
   /* transition: 3s ease-in-out 0.2s; */
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background-color: blue;
 }
 
@@ -45,8 +45,8 @@ div {
 
 #three:hover {
   /* transition: 3s ease-in-out 0.2s; */
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background-color: blue;
 }
 
@@ -61,7 +61,7 @@ div {
 
 #fou:hover {
   /* transition: 3s ease-in-out 0.2s; */
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background-color: blue;
 }

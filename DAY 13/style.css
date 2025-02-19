@@ -14,7 +14,7 @@
 .alpha:hover {
   opacity: 0.2;
   border: 5px solid black;
-  width: 200px;
+  width: 400px;
 }
 
 button {
