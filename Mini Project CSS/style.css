@@ -3,13 +3,26 @@
   padding: 0;
   color: burlywood;
 
-  font-family: "Wallpoet", serif;
+  font-family: "Rancho", serif;
   font-weight: 400;
   font-style: normal;
+
+  /* 
+  font-family: "Covered By Your Grace", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  /* font-family: "Rouge Script", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  /* font-family: "Wallpoet", serif;
+  font-weight: 400;
+  font-style: normal; */
 }
 
 .main_box {
-  background-image: url(photo.jpg);
+  background-image: url(1.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -19,7 +32,7 @@
   font-size: 30px;
   font-weight: 500;
   position: absolute;
-  left: 6px;    
+  left: 6px;
   line-height: 60px;
   top: -10px;
 }
