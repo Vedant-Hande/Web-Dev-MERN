@@ -10,7 +10,7 @@ h2 i {
 
 h1 {
   color: black;
-  margin: 40px;
+  margin: 20px;
 }
 
 span {
@@ -22,7 +22,7 @@ span {
   width: 400px;
   border-radius: 27px;
   margin: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 10px;
   border: 2px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -31,7 +31,7 @@ span {
 img {
   width: 100%;
   border-radius: 27px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #pets {
