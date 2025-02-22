@@ -54,7 +54,7 @@ body {
   position: fixed;
   bottom: 0;
 
-  height: 72px;
+  height: 80px;
   width: 100vw;
 }
 
@@ -250,7 +250,7 @@ a {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
   width: 150px;
   border-radius: 0.75rem;
   padding: 1rem;
@@ -284,4 +284,52 @@ h2 {
 }
 .card:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input {
+  border: 2px solid transparent;
+  width: 45rem;
+  height: 2em;
+  /* padding-left: 1rem; */
+  outline: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-top: 7px;
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+.navbar input {
+  position: relative;
+  left: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+._nav {
+  margin-top: 6px;
+  margin-left: 5rem;
+}
+
+._nav1 {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #b3b3b3;
+  margin-left: 1rem;
+}
+
+.icon_nav {
+  gap: 5px;
+  /* mar */
+  /* margin-left: 1rem; */
+  /* padding-left: 10px; */
 }
