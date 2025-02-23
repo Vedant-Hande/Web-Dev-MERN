@@ -19,17 +19,17 @@ body {
   /* position: absolute; */
   background-color: transparent;
   flex: 1;
-  height: 120px;
+  height: 55px;
 }
 
 .side-bar {
   position: fixed;
   top: 60px;
-  left: 2px;
+  left: 6px;
   height: 76.7vh;
   width: 409px;
   background-color: #121212;
-  border-radius: 12px;
+  border-radius: 1rem;
   margin: 3px;
 }
 
@@ -38,15 +38,15 @@ body {
   height: 76.7vh;
   position: fixed;
   top: 60px;
-  left: 416px;
-  width: 67.2vw;
+  left: 425px;
+  width: 66vw;
   margin: 3px;
-  border-radius: 12px;
+  border-radius: 1rem;
   overflow: auto;
 }
 
 .music-player {
-  background-color: rgba(54, 54, 54, 0.274);
+  background-color: transparent;
   position: fixed;
   bottom: 0;
 
@@ -126,7 +126,7 @@ a {
   padding: 0px 8px;
   margin-top: 8px;
   margin-bottom: 25px;
-  margin-left: 8px;
+  margin-left: 20px;
   border-radius: 1rem;
   background-color: #1f1f1f;
   height: 100px;
@@ -134,7 +134,7 @@ a {
   padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 350px;
+  width: 330px;
 }
 
 .box-text-1 {
@@ -149,14 +149,18 @@ a {
 }
 
 .badge {
+  font-family: "Rancho", serif;
+  font-weight: 500;
+  font-style: normal;
   border: none;
   border-radius: 100px;
   height: 32px;
-  font-weight: 600;
+  /* font-weight: 600; */
   width: 130px;
   background-color: #fff;
   margin-top: 21px;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .badge_p {
@@ -188,6 +192,8 @@ a {
 }
 
 .content-btn .all-btn {
+  font-family: "Rancho", serif;
+  font-weight: 600;
   border: none;
   width: 40px;
   height: 32px;
@@ -198,10 +204,13 @@ a {
   padding-bottom: 4px;
   margin: 5px;
   cursor: pointer;
+  font-size: 1.1rem;
   /* background-color: #fff; */
 }
 .content-btn .music-btn {
+  font-family: "Rancho", serif;
   border: none;
+  font-size: 1.3rem;
   cursor: pointer;
   margin: 5px;
   width: 60px;
@@ -215,6 +224,9 @@ a {
   color: #fff;
 }
 .content-btn .podcasts-btn {
+  font-family: "Rancho", serif;
+  font-weight: 500;
+  font-size: 1.3rem;
   border: none;
   cursor: pointer;
   margin: 5px;
@@ -283,17 +295,30 @@ h2 {
 
 .input {
   border: 2px solid transparent;
-  width: 45rem;
-  height: 2em;
-  /* padding-left: 1rem; */
+  width: 475px;
+  height: 40px;
+  font-size: 1.1rem;
+  padding-left: 1rem;
   outline: none;
+  padding-inline: 1rem;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: 100px;
   transition: all 0.5s;
   margin-top: 7px;
 }
-
+input::placeholder {
+  font-family: "Rancho", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: rgba(192, 191, 191, 0.9);
+  padding: 10px;
+}
+.input:hover::placeholder {
+  color: rgba(18, 18, 18, 0.8);
+  transform: scale(1.05);
+}
 .input:hover,
 .input:focus {
   border: 2px solid #4a9dec;
@@ -303,7 +328,7 @@ h2 {
 
 .navbar input {
   position: relative;
-  left: 2rem;
+  left: 10rem;
 }
 
 .navbar {
@@ -311,30 +336,90 @@ h2 {
   justify-content: flex-start;
   /* align-items: center; */
 }
+
 ._nav {
   margin-top: 6px;
-  margin-left: 5rem;
+  margin-left: 15rem;
+  display: flex;
+  padding-inline: 13px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 1.2rem;
+  width: max-content;
+  transform: scale(1.03);
+  /* font-weight: 600; */
+  /* justify-items: center; */
 }
 
+._nav:hover {
+  transform: scale(1.07);
+  /* font-weight: 600; */
+}
 ._nav1 {
   background-color: rgba(255, 255, 255, 0.1);
   color: #b3b3b3;
   margin-left: 1rem;
 }
 
-.icon_nav {
-  gap: 5px;
-  /* mar */
-  /* margin-left: 1rem; */
-  /* padding-left: 10px; */
-}
-
 .content::-webkit-scrollbar {
-  width: 0.75rem;
+  width: 0.55rem;
   /* height: 0.75px; */
 }
 
 .content::-webkit-scrollbar-thumb {
   background-color: rgba(170, 165, 165, 0.367);
   border-radius: 1rem;
+}
+
+.logo img {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  transform: scale(1.1);
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: 5px;
+  padding: 10px;
+  top: 6px;
+  position: fixed;
+  left: 22px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo i {
+  font-size: 1.2rem;
+  position: fixed;
+  left: 90px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 100px;
+  width: 22px;
+  height: 22px;
+  transform: scale(1.1);
+  /* padding: 14px; */
+  /* margin: 20px; */
+}
+
+.bell i {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 65px;
+  top: 20px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  /* padding: 1rem; */
+}
+
+.account{
+  
 }
