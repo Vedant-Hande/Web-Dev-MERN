@@ -1,18 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  /* 
+
   font-family: "Funnel Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal; */
+  font-style: normal;
   color: aliceblue;
   overflow: hidden;
   background-color: #000;
 
-  font-family: "Rancho", serif;
+  /* font-family: "Rancho", serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; */
 }
 
 .main {
