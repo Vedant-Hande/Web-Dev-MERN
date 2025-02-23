@@ -420,6 +420,18 @@ input::placeholder {
   /* padding: 1rem; */
 }
 
-.account{
-  
+.account {
+  background-color: #ff6437;
+  border-radius: 100px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  position: relative;
+  top: 14px;
+  left: 100px;
+  box-shadow: -1px 0px 20px 3px rgba(170, 165, 165, 0.7); /* line-height: 1; */
+  /* padding-inline: ; */
 }
