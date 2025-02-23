@@ -1,18 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "Funnel Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
   color: aliceblue;
   overflow: hidden;
   background-color: #000;
 
-  /* font-family: "Rancho", serif;
-  font-weight: 400;
-  font-style: normal; */
+  font-family: "Rancho", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .main {
@@ -66,10 +62,6 @@ a {
 .lib-option {
   padding: 12px 16px 8px;
   display: flex;
-  font-family: "Rancho", serif;
-  font-weight: 400;
-  font-style: normal;
-  justify-content: space-between;
   /* margin-left: 15px; */
 }
 
@@ -101,8 +93,11 @@ a:hover {
   align-items: center;
   cursor: pointer;
   padding: 8px;
-  /* height: 33px; */
+  /* padding-top: 5px; */
+  /* margin: 5px; */
+  height: 33px;
   justify-content: center;
+  align-content: center;
   margin-left: 115px;
 }
 
