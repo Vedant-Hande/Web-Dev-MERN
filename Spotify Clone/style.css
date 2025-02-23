@@ -17,16 +17,16 @@ body {
 
 .navbar {
   /* position: absolute; */
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
   flex: 1;
-  height: 45px;
+  height: 120px;
 }
 
 .side-bar {
   position: fixed;
-  top: 49px;
+  top: 60px;
   left: 2px;
-  height: 80vh;
+  height: 76.7vh;
   width: 409px;
   background-color: #121212;
   border-radius: 12px;
@@ -35,9 +35,9 @@ body {
 
 .content {
   background-color: #121212;
-  height: 80vh;
+  height: 76.7vh;
   position: fixed;
-  top: 49px;
+  top: 60px;
   left: 416px;
   width: 67.2vw;
   margin: 3px;
@@ -335,7 +335,6 @@ h2 {
 }
 
 .content::-webkit-scrollbar-thumb {
-  background-color: darkgray;
-  border-radius: 5px;
-  /* height: -10px; */
+  background-color: rgba(170, 165, 165, 0.367);
+  border-radius: 1rem;
 }
