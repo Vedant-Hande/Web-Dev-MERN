@@ -39,7 +39,7 @@ body {
   position: fixed;
   top: 49px;
   left: 416px;
-  width: 71.5vw;
+  width: 67.2vw;
   margin: 3px;
   border-radius: 12px;
   overflow: auto;
@@ -327,4 +327,15 @@ h2 {
   /* mar */
   /* margin-left: 1rem; */
   /* padding-left: 10px; */
+}
+
+.content::-webkit-scrollbar {
+  width: 0.75rem;
+  /* height: 0.75px; */
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border-radius: 5px;
+  /* height: -10px; */
 }
