@@ -373,8 +373,8 @@ input::placeholder {
 }
 
 .logo img {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   display: flex;
   transform: scale(1.1);
   align-items: center;
@@ -382,9 +382,11 @@ input::placeholder {
   align-self: center;
   margin-top: 5px;
   padding: 10px;
-  top: 6px;
+  top: 1px;
   position: fixed;
-  left: 22px;
+  left: 20px;
+  filter: grayscale(1) contrast(1.5) brightness(1);
+  mix-blend-mode: initial;
 }
 
 .logo {
@@ -412,8 +414,8 @@ input::placeholder {
   display: flex;
   justify-content: center;
   position: relative;
-  left: 65px;
-  top: 20px;
+  left: 125px;
+  top: 22px;
   width: 2rem;
   height: 2rem;
   font-size: 1.3rem;
@@ -431,7 +433,7 @@ input::placeholder {
   font-weight: 800;
   position: relative;
   top: 14px;
-  left: 100px;
+  left: 145px;
   box-shadow: -1px 0px 20px 3px rgba(170, 165, 165, 0.7); /* line-height: 1; */
   /* padding-inline: ; */
 }
@@ -479,6 +481,7 @@ input::placeholder {
 }
 
 .playback-bar {
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,12 +493,13 @@ input::placeholder {
   appearance: none;
   border-radius: 100px;
   cursor: pointer;
-  background-color: white;
+  background-color: rgba(63, 220, 63, 0.788);
 }
 
 .progress-bar::-webkit-slider-runnable-track {
+  /* margin-top: 1rem; */
   /* margin: 10px; */
-  background-color: rgba(31, 187, 33, 0.759);
+  /* background-color: ; */
   width: 50%;
   border-radius: 100px;
   /* background: lightgreen; */
@@ -506,7 +510,7 @@ input::placeholder {
   appearance: none;
   height: 16px;
   width: 16px;
-  background-color: #1bd760;
+  background-color: white;
   border-radius: 100px;
   margin-top: -6px;
 }
@@ -550,4 +554,54 @@ input::placeholder {
 
 .album-content .album-para2:hover {
   text-decoration: underline;
+}
+
+.side-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  /* align-self: center; */
+  left: -35px;
+
+  /* margin-left: -30px; */
+}
+
+.side-icon i {
+  opacity: 0.6;
+  transform: scale(1.05);
+  /* font-size: 1.rem; */
+  margin-left: 1rem;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.side-icon i:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+.side-icon-range {
+  appearance: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: white;
+  margin-left: 8px;
+  margin-right: -5px;
+}
+
+.side-icon-range::-webkit-slider-runnable-track {
+  height: 0.3rem;
+}
+
+.side-icon-range::-webkit-slider-thumb {
+  appearance: none;
+}
+
+.side-icon-range:hover::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+  background-color: rgba(42, 237, 42, 0.883);
+  border-radius: 100px;
+  margin-top: -5px;
 }
