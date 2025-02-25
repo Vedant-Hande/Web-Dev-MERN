@@ -10,15 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rancho&family=Rouge+Script&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
   </head>
   <body>
     <main>
@@ -159,31 +157,33 @@
             <div class="player-control">
               <img
                 src="./Assets/player_icon1.png"
-                class="player-control-icon"
-              />
+                class="player-control-icon" />
               <img
                 src="./Assets/player_icon2.png"
-                class="player-control-icon"
-              />
+                class="player-control-icon" />
               <img
                 src="./Assets/player_icon3.png"
-                class="player-control-icon" id="mid"
-              />
+                class="player-control-icon"
+                id="mid" />
               <img
                 src="./Assets/player_icon4.png"
-                class="player-control-icon"
-              />
+                class="player-control-icon" />
               <img
                 src="./Assets/player_icon5.png"
-                class="player-control-icon"
-              />
+                class="player-control-icon" />
             </div>
-            <div class="progress-bar">
-              <span class="currnet-time">0.00</span>
-              <input type="range" name="progress" class="progress" />
-              <span class="total-time">3.33</span>
+            <div class="playback-bar">
+              <span class="current-time">00:00</span>
+              <input
+                type="range"
+                min="0"
+                max="50"
+                value="1"
+                class="progress-bar input-range" />
+              <span class="final-time">03:33</span>
             </div>
           </div>
+
           <div class="side-icon"></div>
         </div>
       </div>

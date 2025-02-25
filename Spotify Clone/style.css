@@ -477,3 +477,39 @@ input::placeholder {
   height: 1.8rem;
   opacity: 1;
 }
+
+.playback-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 50%;
+  margin-top: 0.5rem;
+  appearance: none;
+  /* background-color: transparent; */
+  cursor: pointer;
+  background-color: white;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+  /* margin: 10px; */
+  background-color: rgba(31, 187, 33, 0.759);
+  width: 50%;
+  border-radius: 100px;
+  /* background: lightgreen; */
+  height: 0.3rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #1bd760;
+  border-radius: 100px;
+  margin-top: -6px;
+}
+.input-range {
+  margin: 10px;
+}
