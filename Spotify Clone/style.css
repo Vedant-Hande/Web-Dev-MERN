@@ -514,3 +514,40 @@ input::placeholder {
 .input-range {
   margin: 10px;
 }
+
+.alubm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alubm-img img {
+  width: 56px;
+  height: 56px;
+  border-radius: 0.5rem;
+  left: 1rem;
+  margin: 10px;
+}
+
+.album-content .album-para1 {
+  font-size: 1.3rem;
+  margin-left: 8px;
+  margin-top: 1.5rem;
+  position: relative;
+  top: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.album-content .album-para2 {
+  font-size: 1.2rem;
+  margin-left: 8px;
+  position: relative;
+  font-weight: 200;
+  top: -17px;
+  /* margin-top: 1.5rem; */
+}
+
+.album-content .album-para2:hover {
+  text-decoration: underline;
+}
