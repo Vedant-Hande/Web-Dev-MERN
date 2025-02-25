@@ -436,4 +436,44 @@ input::placeholder {
   /* padding-inline: ; */
 }
 
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.alubm {
+  width: 25%;
+}
+
+.player {
+  width: 50%;
+}
+
+.side-icon {
+  width: 25%;
+}
+
+.player-control-icon {
+  height: 1rem;
+  margin-left: 2rem;
+  opacity: 0.7;
+}
+
+.player-control-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.player-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 15px; */
+  position: relative;
+}
+
+#mid {
+  height: 1.8rem;
+  opacity: 1;
+}
