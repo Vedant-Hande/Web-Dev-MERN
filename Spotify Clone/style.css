@@ -435,3 +435,19 @@ input::placeholder {
   box-shadow: -1px 0px 20px 3px rgba(170, 165, 165, 0.7); /* line-height: 1; */
   /* padding-inline: ; */
 }
+
+
+.player {
+position: relative;
+/* left: 40px; */
+font-size: 1rem;
+  /* height: 80px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play-icon{
+ font-size: 10px;
+}
+
