@@ -488,7 +488,7 @@ input::placeholder {
   width: 50%;
   margin-top: 0.5rem;
   appearance: none;
-  /* background-color: transparent; */
+  border-radius: 100px;
   cursor: pointer;
   background-color: white;
 }
