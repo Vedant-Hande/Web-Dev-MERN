@@ -529,27 +529,42 @@ input::placeholder {
   width: 56px;
   height: 56px;
   border-radius: 0.5rem;
-  left: 1rem;
-  margin: 10px;
+  left: 0.75rem;
+  margin: 5px;
+  top: 88%;
+  position: fixed;
 }
 
 .album-content .album-para1 {
   font-size: 1.3rem;
-  margin-left: 8px;
+  margin-left: 1rem;
   margin-top: 1.5rem;
   position: relative;
   top: 10px;
   font-weight: 800;
+  animation: 3s linear 2s infinite alternate bounce;
   letter-spacing: 1.5px;
+  left: -35px;
 }
 
 .album-content .album-para2 {
   font-size: 1.2rem;
-  margin-left: 8px;
+  margin-left: 1.1rem;
   position: relative;
+  animation: 3s linear 1s infinite alternate bounce;
   font-weight: 200;
-  top: -17px;
+  top: -13px;
+  left: -35px;
   /* margin-top: 1.5rem; */
+}
+
+@keyframes bounce {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(3.2vw);
+  }
 }
 
 .album-content .album-para2:hover {
