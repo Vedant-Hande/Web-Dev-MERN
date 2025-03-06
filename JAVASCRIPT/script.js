@@ -11,3 +11,13 @@ undefined
 
 len
 12
+
+
+name
+'Vedant Hande'
+
+let fChar = name[0];
+undefined
+
+fChar
+'V'
