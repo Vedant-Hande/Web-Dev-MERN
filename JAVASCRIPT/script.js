@@ -21,3 +21,16 @@ undefined
 
 fChar
 'V'
+
+
+let lChar= name[10];
+undefined
+
+lChar
+'d'
+
+let l_Char= name[name.length-1];
+undefined
+
+l_Char
+'e'
