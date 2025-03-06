@@ -34,3 +34,25 @@ undefined
 
 l_Char
 'e'
+
+//  finding the output of this  vedant Hande+123
+let newStr= "vedant Hande";
+undefined
+
+newStr+123
+'vedant Hande123'
+
+
+let emptyStr="";
+undefined
+
+
+emptyStr.length
+0
+
+let spaceStr=" ";
+undefined
+
+
+spaceStr.length
+1
