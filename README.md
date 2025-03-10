@@ -1,7 +1,5 @@
 # Hi, I'm [VEDNAT HANDE]! 👋
 
-[![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-%230077B5?style=flat-square&logo=linkedin)]([www.linkedin.com/in/vedant-hande-a205a62b])
-[![Portfolio Badge](https://img.shields.io/badge/-Portfolio-black?style=flat-square&logo=netlify)]([https://vedantportfolio-ten.vercel.app/])
 
 [ "Full-Stack Developer | Building Web Applications with MERN Stack" or "Passionate Software Engineer | Solving Problems with Code"]
 
