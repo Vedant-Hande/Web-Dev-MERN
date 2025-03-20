@@ -41,4 +41,18 @@ if (color == "green") {
   console.log("YOU CAN GO NOW... it's GREEN");
 }
 
+// 2. ------------>  Popcorn price checker Based on size
 
+let popCornSize = "xl";
+
+if (popCornSize === "xl") {
+  console.log("popcorn pirce is : 250");
+} else if (popCornSize === "l") {
+  console.log("popcorn pirce is : 200");
+} else if (popCornSize === "m") {
+  console.log("popcorn pirce is : 150");
+} else if (popCornSize === "s") {
+  console.log("popcorn pirce is : 100");
+} else {
+  console.log("sorry u are choosing wrong size popcorn");
+}
