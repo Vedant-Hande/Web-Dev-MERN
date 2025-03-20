@@ -27,13 +27,18 @@ console.log(++a); //13
 
 // --------------------- Conditional Statement ------------------------------
 
+//  1. --------> Traffic Light System
+
 let color = "yellow";
+
 if (color == "red") {
-  console.log("STOP...");
+  console.log("STOP... it's RED");
 }
 if (color == "yellow") {
-  console.log("SLOW DOWN...");
+  console.log("SLOW DOWN... it's YELLOW");
 }
 if (color == "green") {
-  console.log("YOU CAN GO NOW...");
+  console.log("YOU CAN GO NOW... it's GREEN");
 }
+
+
