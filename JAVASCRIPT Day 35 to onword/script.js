@@ -1,12 +1,14 @@
-let a = 5;
-console.log(a++);
-console.log(++a);
-console.log(-a);
-console.log(!a);
+// let a = 5;
+// console.log(a++);
+// console.log(++a);
+// console.log(-a);
+// console.log(!a);
 
-/* output =>
-5;
-7 - 7;
-false;
-*/
+// ------------------------ Templet Retrals ----------------------------------
 
+let pen1_Price = 10;
+let pen2_Price = 20;
+// let output = "The total price is : " + (pen1_Price + pen2_Price) + " Rupess.";
+let output = `The total price is : ${pen1_Price + pen2_Price} Rupess.`;
+// back tik
+console.log(output);
