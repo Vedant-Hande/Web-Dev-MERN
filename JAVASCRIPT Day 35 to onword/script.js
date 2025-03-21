@@ -1,4 +1,6 @@
-console.log("DAY 45");
+console.log(
+  "---------------------------------DAY 45--------------------------------"
+);
 // ------------------------ Templet Retrals ----------------------------------
 
 let pen1_Price = 10;
@@ -57,8 +59,9 @@ if (popCornSize === "xl") {
   console.log("sorry u are choosing wrong size popcorn");
 }
 
-// ---------------------------------DAY46-------------------------------------------
-console.log("DAY 46");
+console.log(
+  "------------------------DAY 46----------------------------------------"
+);
 
 //  QS. a "good string " is a string that start with letter A and length is >(greater then) 3. write a program that find the good string and bad string...
 
