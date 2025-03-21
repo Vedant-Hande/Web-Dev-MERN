@@ -73,7 +73,6 @@ if (str.length > 3 && str[0] === ("a" || "A")) {
 // QS. practice Ques-
 
 let num = 12;
-// T                 F               T
 if (num % 3 === 0 && (num + 1 == 15 || num - 1 == 11)) {
   console.log("Safe");
 } else {
