@@ -57,8 +57,28 @@ if (popCornSize === "xl") {
   console.log("sorry u are choosing wrong size popcorn");
 }
 
-// ---------------------------------DAY 46--------------------------------------------------------
+// ---------------------------------DAY46-------------------------------------------
 console.log("DAY 46");
 
-// Practice Question
+//  QS. a "good string " is a string that start with letter A and length is >(greater then) 3. write a program that find the good string and bad string...
+
+let str = "apple";
+
+if (str.length > 3 && str[0] === "a") {
+  console.log(`The string ${str} is Good string`);
+} else {
+  console.log(`The string ${str} is Bad string`);
+}
+
+// QS. practice Ques-
+
+let num = 12;
+// T                 F               T
+if (num % 3 === 0 && (num + 1 == 15 || num - 1 == 11)) {
+  console.log("Safe");
+} else {
+  console.log("Unsafe");
+}
+
+// switch statement Qs.
 
