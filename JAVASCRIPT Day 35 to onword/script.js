@@ -64,7 +64,7 @@ console.log("DAY 46");
 
 let str = "apple";
 
-if (str.length > 3 && str[0] === "a") {
+if (str.length > 3 && str[0] === ("a" || "A")) {
   console.log(`The string ${str} is Good string`);
 } else {
   console.log(`The string ${str} is Bad string`);
