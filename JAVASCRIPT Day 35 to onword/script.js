@@ -82,3 +82,41 @@ if (num % 3 === 0 && (num + 1 == 15 || num - 1 == 11)) {
 
 // switch statement Qs.
 
+let day = 5;
+
+switch (day) {
+  case 1:
+    console.log("Mon");
+    break;
+  case 2:
+    console.log("Tues");
+    break;
+  case 3:
+    console.log("Wensd");
+    break;
+  case 4:
+    console.log("Thrs");
+    break;
+  case 5:
+    console.log("Fri");
+    break;
+  case 6:
+    console.log("Sat");
+    break;
+  case 7:
+    console.log("Sun");
+    break;
+  default:
+    console.log(
+      `There are only 7 day in a week & you want day ${day} is not possible! sorry..`
+    );
+    break;
+}
+
+// Alert and Prompt
+
+let fName = prompt("Enter 1st Name: ");
+let sName = prompt("Enter 2nd Name: ");
+console.log(`${fName} ${sName}`);
+// console.error(`${fName} ${sName}`);
+// console.warn(`${fName} ${sName}`);
