@@ -56,4 +56,9 @@ if (popCornSize === "xl") {
 } else {
   console.log("sorry u are choosing wrong size popcorn");
 }
-  
+
+// ---------------------------------DAY 46--------------------------------------------------------
+console.log("DAY 46");
+
+// Practice Question
+
