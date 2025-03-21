@@ -124,7 +124,6 @@ console.log(`${fName} ${sName}`);
 
 let n1 = 32;
 let n2 = 47552;
-
 if (n1 % 10 == n2 % 10) {
   console.log("last digit are same");
 } else {
