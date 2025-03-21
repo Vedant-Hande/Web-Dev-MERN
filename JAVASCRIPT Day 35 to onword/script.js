@@ -119,3 +119,14 @@ let sName = prompt("Enter 2nd Name: ");
 console.log(`${fName} ${sName}`);
 // console.error(`${fName} ${sName}`);
 // console.warn(`${fName} ${sName}`);
+
+// Qs.  write the program to check the if 2 numbers have  the same last digit.
+
+let n1 = 32;
+let n2 = 47552;
+
+if (n1 % 10 == n2 % 10) {
+  console.log("last digit are same");
+} else {
+  console.log("last digit is not same");
+}
