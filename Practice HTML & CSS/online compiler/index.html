@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compiler IDE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Compiler IDE</h1>
+      </header>
+
+      <section class="controls">
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="Java">Java</option>
+          <option value="Python">Python-like</option>
+        </select>
+      </section>
+
+      <section class="editor">
+        <textarea
+          id="code-editor"
+          placeholder="Write your code here..."></textarea>
+      </section>
+
+      <section class="buttons">
+        <button id="compile-btn">Compile</button>
+        <button id="run-btn">Run</button>
+        <button id="debug-btn">Debug</button>
+      </section>
+
+      <section class="output">
+        <textarea
+          id="output-console"
+          placeholder="Output will be displayed here..."
+          readonly></textarea>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
