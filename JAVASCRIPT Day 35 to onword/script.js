@@ -138,4 +138,5 @@ console.log(
 );
 
 let password = prompt("Enter your password        ");
-console.log(password.trim());
+
+console.log(`your passwor is :${password.toLowerCase().trim()}`);
