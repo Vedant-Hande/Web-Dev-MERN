@@ -132,3 +132,10 @@ if (n1 % 10 == n2 % 10) {
 } else {
   console.log("last digit is not same");
 }
+
+console.log(
+  "------------------------DAY 47----------------------------------------"
+);
+
+let password = prompt("Enter your password        ");
+console.log(password.trim());
