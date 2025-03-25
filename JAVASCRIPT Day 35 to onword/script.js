@@ -137,6 +137,6 @@ console.log(
   "------------------------DAY 47----------------------------------------"
 );
 
-let password = prompt("Enter your password        ");
-
+let password = prompt("Enter your password");
 console.log(`your passwor is :${password.toLowerCase().trim()}`);
+console.log("index of _ is : ", password.indexOf("_"));
