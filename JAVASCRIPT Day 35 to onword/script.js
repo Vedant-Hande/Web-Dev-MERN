@@ -140,3 +140,15 @@ console.log(
 let password = prompt("Enter your password");
 console.log(`your passwor is :${password.toLowerCase().trim()}`);
 console.log("index of _ is : ", password.indexOf("_"));
+
+console.log(
+  "------------------------DAY 48----------------------------------------"
+);
+let msg = "ilovecoding";
+console.log(msg.trim().toUpperCase());
+console.log(msg.indexOf("co"));
+
+//array
+
+let student = [10, 20, 30, 40, "vedant"];
+console.log(student);
