@@ -19,3 +19,15 @@ for (let i = 0; i < follow.length; i++) {
   console.log(follow[i]);
 }
 console.log(`You blocked this user :${blocked}`);
+
+// Q change this array in last .
+
+let start = ["jan", "july", "march", "August"];
+let final = [];
+for (let i = 0; i < start.length == 1; i++) {
+  start.shift();
+}
+
+start.unshift("july");
+start.unshift("june");
+console.log(start);
