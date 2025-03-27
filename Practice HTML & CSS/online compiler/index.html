@@ -3,45 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Compiler IDE</title>
+    <title>Syntax Error</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rancho&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Compiler IDE</h1>
-      </header>
+      <div class="header">Syntax Error</div>
+      <div class="main-content">
+        <div class="code-editor">
+          <div class="line-numbers"></div>
+          <div class="controls">
+            <select>
+              <option>Select Language</option>
+              <option>JavaScript</option>
+              <option>Java</option>
+            </select>
 
-      <section class="controls">
-        <label for="language">Language:</label>
-        <select id="language">
-          <option value="C">C</option>
-          <option value="C++">C++</option>
-          <option value="Java">Java</option>
-          <option value="Python">Python-like</option>
-        </select>
-      </section>
+            <button>Run</button>
+          </div>
 
-      <section class="editor">
-        <textarea
-          id="code-editor"
-          placeholder="Write your code here..."></textarea>
-      </section>
-
-      <section class="buttons">
-        <button id="compile-btn">Compile</button>
-        <button id="run-btn">Run</button>
-        <button id="debug-btn">Debug</button>
-      </section>
-
-      <section class="output">
-        <textarea
-          id="output-console"
-          placeholder="Output will be displayed here..."
-          readonly></textarea>
-      </section>
+          <textarea
+            class="code-area"
+            placeholder="Enter your code here"></textarea>
+        </div>
+        <div class="input-output">
+          <textarea
+            class="input-area"
+            placeholder="Enter Input here"></textarea>
+          <div class="para-code">
+            If your code takes input, add it in the above box before running.
+          </div>
+          <textarea
+            class="output-area"
+            placeholder="Output"
+            readonly></textarea>
+        </div>
+      </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
+  <script src="script.js"></script>
 </html>
