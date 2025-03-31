@@ -21,7 +21,20 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #d9643a;
-  letter-spacing: 5px;
+  letter-spacing: 20px;
+}
+.header #text {
+  animation: 7s linear 1s infinite alternate bounce;
+  margin-left: 10px;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(60vw);
+  }
 }
 .main-content {
   display: flex;
@@ -65,6 +78,8 @@ body {
   border-radius: 5px;
   margin: 10px;
   resize: vertical;
+  /* height: 500px; */
+
   margin-bottom: 20px;
 }
 .controls {
