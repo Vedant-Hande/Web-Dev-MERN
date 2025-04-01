@@ -184,3 +184,54 @@ VM562: 1(2)[(20, 10)];
 // undefined
 console.log(stud.slice(-6));
 // undefined
+
+console.log(stud.splice(4));
+VM614: (1)[10];
+undefined;
+console.log(stud.splice(2, 2));
+VM635: 1(2)[(30, 20)];
+undefined;
+console.log(stud.splice(1, 3, "red", 124, "blue"));
+VM696: (1)[40];
+undefined;
+
+stud(4)[("vedant", "red", 124, "blue")];
+let month = ["june", "aug", "feb", "jan"];
+
+undefined;
+console.log(month.spl);
+undefined;
+console.log(month.splice(1, 2, "may", "june"));
+VM989: 1(2)[("aug", "feb")];
+undefined;
+month(4)[("june", "may", "june", "jan")];
+console.log(month.splice(0, 2, "may", "june"));
+VM1025: 1(2)[("june", "may")];
+undefined;
+month(4)[("may", "june", "june", "jan")];
+let months = ["june", "aug", "feb", "jan"];
+
+undefined;
+months(4)[("june", "aug", "feb", "jan")];
+console.log(months.splice(0, 2, "may", "june"));
+VM1075: 1(2)[("june", "aug")];
+undefined;
+months(4)[("may", "june", "feb", "jan")];
+
+let lang = ["c", "c++", "java", "javascript", "php", "c#"];
+
+undefined;
+lang.reverse();
+(6)[("c#", "php", "javascript", "java", "c++", "c")];
+lang.indexOf("javascript");
+2;
+console.log(lang.reverse().indexOf("javascript"));
+
+undefined;
+lang.unshift("sql");
+7;
+lang.reverse();
+(7)[("c#", "php", "javascript", "java", "c++", "c", "sql")];
+console.log(lang.reverse().indexOf("sql"));
+
+undefined;
