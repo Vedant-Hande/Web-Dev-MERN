@@ -121,7 +121,6 @@ let fName = prompt("Enter 1st Name: ");
 let sName = prompt("Enter 2nd Name: ");
 console.log(`${fName} ${sName}`);
 
-
 let n1 = 32;
 let n2 = 47552;
 if (n1 % 10 == n2 % 10) {
@@ -149,3 +148,39 @@ console.log(msg.indexOf("co"));
 
 let student = [10, 20, 30, 40, "vedant"];
 console.log(student);
+
+console.log(
+  "------------------------DAY 49----------------------------------------"
+);
+
+// let student = [10, 20, 30, 40, "vedant"];
+
+undefined;
+console.log(student);
+VM75: 1(5)[(10, 20, 30, 40, "vedant")];
+undefined;
+let stud = [10, 20, 30, 40, "vedant"];
+
+// undefined
+student.concat(stud);
+(10)[(10, 20, 30, 40, "vedant", 10, 20, 30, 40, "vedant")];
+console.log(student.indexOf("vedant"));
+
+// undefined
+console.log(stud.reverse());
+VM201: 1(5)[("vedant", 40, 30, 20, 10)];
+// undefined
+
+console.log(stud.slice(3));
+// undefined
+console.log(stud.slice(3, 5));
+VM460: 1(2)[(20, 10)];
+// undefined
+console.log(stud.slice(2, 6));
+VM491: 1(3)[(30, 20, 10)];
+// undefined
+console.log(stud.slice(-2));
+VM562: 1(2)[(20, 10)];
+// undefined
+console.log(stud.slice(-6));
+// undefined
