@@ -120,10 +120,7 @@ switch (day) {
 let fName = prompt("Enter 1st Name: ");
 let sName = prompt("Enter 2nd Name: ");
 console.log(`${fName} ${sName}`);
-// console.error(`${fName} ${sName}`);
-// console.warn(`${fName} ${sName}`);
 
-// Qs.  write the program to check the if 2 numbers have  the same last digit.
 
 let n1 = 32;
 let n2 = 47552;
