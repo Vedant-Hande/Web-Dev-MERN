@@ -93,3 +93,24 @@ if (pr_Str.length == 0) {
 // VM791:4 string is not empty
 // undefined
 const pr_Char = "V";
+
+// removing the white space within the string
+undefined;
+pr_Str;
+("vedant");
+console.log(`removing the white space within the string ${pr_Str.trim()}`);
+// VM1377:1 removing the white space within the string vedant
+undefined;
+pr_Str1 = "    vedant      Hande      ";
+("    vedant      Hande      ");
+console.log(`removing the white space within the string ${pr_Str1.trim()}`);
+// VM1490:1 removing the white space within the string vedant      Hande
+undefined;
+console.log(`removing the white space within the string :  ${pr_Str1.trim()}`);
+// VM1496:1 removing the white space within the string :  vedant      Hande
+undefined;
+pr_Str1 = "    Vedant Hande    ";
+("    Vedant Hande    ");
+console.log(`removing the white space within the string :  ${pr_Str1.trim()}`);
+// VM1571:1 removing the white space within the string :  Vedant Hande
+undefined;
