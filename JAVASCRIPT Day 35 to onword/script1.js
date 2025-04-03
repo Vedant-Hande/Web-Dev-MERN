@@ -109,3 +109,30 @@ pr_Str1 = "    Vedant Hande    ";
 ("    Vedant Hande    ");
 console.log(`removing the white space within the string :  ${pr_Str1.trim()}`);
 // VM1571:1 removing the white space within the string :  Vedant Hande
+
+arr
+(3) [Array(2), Array(2), Array(2)]
+if(arr.indexOf(6)!==null)
+{
+    console.log("element found");}
+VM1753:3 element found
+undefined
+if(arr.indexOf(6)!==null)
+{
+    console.log("element found");}
+VM1757:3 element found
+undefined
+if(arr.indexOf(6)!==0)
+{
+    console.log("element found");}
+// VM1764:3 element found
+undefined
+if(arr.indexOf(6)==0)
+{
+    console.log("element found");}
+undefined
+if(arr.indexOf(6)!=="")
+{
+    console.log("element found");}
+// VM1775:3 element found
+undefined
