@@ -227,4 +227,3 @@ lang.reverse();
 (7)[("c#", "php", "javascript", "java", "c++", "c", "sql")];
 console.log(lang.reverse().indexOf("sql"));
 
-undefined;
