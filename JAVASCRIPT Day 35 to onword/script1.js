@@ -36,7 +36,6 @@ console.log(
   "------------------------DAY 50----------------------------------------"
 );
 
-
 const arr = [
   [2, 4],
   [3, 6],
@@ -111,35 +110,117 @@ pr_Str1 = "    Vedant Hande    ";
 console.log(`removing the white space within the string :  ${pr_Str1.trim()}`);
 // VM1571:1 removing the white space within the string :  Vedant Hande
 
-arr
-(3) [Array(2), Array(2), Array(2)]
-if(arr.indexOf(6)!==null)
-{
-    console.log("element found");}
+arr(3)[(Array(2), Array(2), Array(2))];
+if (arr.indexOf(6) !== null) {
+  console.log("element found");
+}
 // VM1753:3 element found
-undefined
-if(arr.indexOf(6)!==null)
-{
-    console.log("element found");}
+undefined;
+if (arr.indexOf(6) !== null) {
+  console.log("element found");
+}
 // VM1757:3 element found
-undefined
-if(arr.indexOf(6)!==0)
-{
-    console.log("element found");}
+undefined;
+if (arr.indexOf(6) !== 0) {
+  console.log("element found");
+}
 // VM1764:3 element found
-undefined
-if(arr.indexOf(6)==0)
-{
-    console.log("element found");}
-undefined
-if(arr.indexOf(6)!=="")
-{
-    console.log("element found");}
+undefined;
+if (arr.indexOf(6) == 0) {
+  console.log("element found");
+}
+undefined;
+if (arr.indexOf(6) !== "") {
+  console.log("element found");
+}
 // VM1775:3 element found
-undefined
-
-
+undefined;
 
 console.log(
   "------------------------DAY 51----------------------------------------"
 );
+
+// printing odd Number from 1 to 50
+for (let i = 0; i < 50; i++) {
+  if (i % 2 == 1) {
+    console.log(i);
+  }
+}
+
+// VM50:4 1
+// VM50:4 3
+// VM50:4 5
+// VM50:4 7
+// VM50:4 9
+// VM50:4 11
+// VM50:4 13
+// VM50:4 15
+// VM50:4 17
+// VM50:4 19
+// VM50:4 21
+// VM50:4 23
+// VM50:4 25
+// VM50:4 27
+// VM50:4 29
+// VM50:4 31
+// VM50:4 33
+// VM50:4 35
+// VM50:4 37
+// VM50:4 39
+// VM50:4 41
+// VM50:4 43
+// VM50:4 45
+// VM50:4 47
+// VM50:4 49
+// undefined
+
+// printing even Number from 1 to 50
+for (let i = 0; i < 50; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}
+
+// VM62:4 0
+// VM62:4 2
+// VM62:4 4
+// VM62:4 6
+// VM62:4 8
+// VM62:4 10
+// VM62:4 12
+// VM62:4 14
+// VM62:4 16
+// VM62:4 18
+// VM62:4 20
+// VM62:4 22
+// VM62:4 24
+// VM62:4 26
+// VM62:4 28
+// VM62:4 30
+// VM62:4 32
+// VM62:4 34
+// VM62:4 36
+// VM62:4 38
+// VM62:4 40
+// VM62:4 42
+// VM62:4 44
+// VM62:4 46
+// VM62:4 48
+// undefined
+
+// printing multipication table of 7
+for (let i = 7; i <= 70; i += 7) {
+  console.log(i);
+}
+
+// VM256:3 7
+// VM256:3 14
+// VM256:3 21
+// VM256:3 28
+// VM256:3 35
+// VM256:3 42
+// VM256:3 49
+// VM256:3 56
+// VM256:3 63
+// VM256:3 70
+// undefined
