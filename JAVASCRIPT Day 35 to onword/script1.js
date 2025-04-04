@@ -209,10 +209,15 @@ for (let i = 0; i < 50; i++) {
 // undefined
 
 // printing multipication table of 7
-for (let i = 7; i <= 70; i += 7) {
+// for (let i = 7; i <= 70; i += 7) {
+//   console.log(i);
+// }
+
+const user_Num = prompt("enter the number ");
+let num = parseInt(user_Num);
+for (let i = num; i <= num * 10; i = i + num) {
   console.log(i);
 }
-
 // VM256:3 7
 // VM256:3 14
 // VM256:3 21
