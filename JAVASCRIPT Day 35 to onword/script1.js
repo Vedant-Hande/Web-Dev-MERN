@@ -36,6 +36,7 @@ console.log(
   "------------------------DAY 50----------------------------------------"
 );
 
+
 const arr = [
   [2, 4],
   [3, 6],
@@ -115,12 +116,12 @@ arr
 if(arr.indexOf(6)!==null)
 {
     console.log("element found");}
-VM1753:3 element found
+// VM1753:3 element found
 undefined
 if(arr.indexOf(6)!==null)
 {
     console.log("element found");}
-VM1757:3 element found
+// VM1757:3 element found
 undefined
 if(arr.indexOf(6)!==0)
 {
@@ -136,3 +137,9 @@ if(arr.indexOf(6)!=="")
     console.log("element found");}
 // VM1775:3 element found
 undefined
+
+
+
+console.log(
+  "------------------------DAY 51----------------------------------------"
+);
