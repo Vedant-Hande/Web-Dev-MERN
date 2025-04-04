@@ -243,3 +243,4 @@ if (guess == fav_Movie) {
 } else {
   console.log("you Quit");
 }
+// console.log("object :>> ", fav_Movie);
