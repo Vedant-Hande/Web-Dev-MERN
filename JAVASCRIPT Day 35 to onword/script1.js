@@ -279,3 +279,10 @@ twitter_Post[prop];
 undefined;
 twitter_Post[prop];
 undefined;
+
+const obj = {
+  false: "b",
+  true: "c",
+  null: "d",
+  undefined: "e",
+};
