@@ -248,4 +248,34 @@ if (guess == fav_Movie) {
 console.log(
   "------------------------DAY 52----------------------------------------"
 );
+// object literals
+const student = {
+  name: "vedant",
+  age: 18,
+  marks: 99.4,
+};
 
+const twitter_Post = {
+  userName: "@vedanthande",
+  content: "hello this is my 1st post",
+  likes: 47,
+  repost: 14,
+  tages: ["@veanthande", "@vaishanavibhangre", "@delta"],
+};
+
+twitter_Post["content"];
+// 'hello this is my 1st post'
+
+twitter_Post.likes;
+twitter_Post.tages;
+// (3) ['@veanthande', '@vaishanavibhangre', '@delta']
+twitter_Post.tages[2];
+("@delta");
+let prop = "userName";
+undefined;
+twitter_Post[prop];
+("@vedanthande");
+// let prop = "userName1";
+undefined;
+twitter_Post[prop];
+undefined;
