@@ -14,10 +14,15 @@ while (true) {
     console.log(`task added sucessfully :>> ${task}`);
   } else if (req == "delete") {
     console.log(`task deleted ${todo.shift()}`);
-  } else if (req != "add" || req != "delete" || req != "list") {
-    console.log("you enter wrong choice plz renter your choice! ");
   } else if (req == "quit") {
     console.log("Quitting the app :>> you enter  ", req);
     break;
+  } else if (
+    req != "add" ||
+    req != "delete" ||
+    req != "list" ||
+    req != "quit"
+  ) {
+    console.log("you enter wrong choice plz renter your choice! ");
   }
 }
