@@ -1,5 +1,5 @@
 const todo = [];
-// creating an todo
+// creating  todo application
 while (true) {
   let req = prompt("Enter your request...");
   if (req == "list") {
