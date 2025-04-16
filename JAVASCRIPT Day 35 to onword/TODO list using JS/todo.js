@@ -1,3 +1,4 @@
+// todo application using only JavaScript
 const todo = [];
 // creating  todo application
 while (true) {
