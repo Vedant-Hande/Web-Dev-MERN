@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fav_Movie guessing game</title>
+  </head>
+  <body>
+    <h1>favorite Movie guessing game</h1>
+    <h1>Game started press quit to exit the game !</h1>
+    <script>
+      console.log("Game started press quit to exit the game !");
+
+      const fav_Movie = "war";
+      let guess = prompt("Guess my fav movie ...");
+      while (guess != fav_Movie && guess != "quit") {
+        guess = prompt(" Wrong guess! Plz try Again");
+      }
+      if (guess == fav_Movie) {
+        console.log("guess is correct ! you win");
+      } else {
+        console.log("you Quit");
+      }
+    </script>
+  </body>
+</html>
