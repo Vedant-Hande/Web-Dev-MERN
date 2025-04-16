@@ -8,19 +8,6 @@
   <body>
     <h1>favorite Movie guessing game</h1>
     <h1>Game started press quit to exit the game !</h1>
-    <script>
-      console.log("Game started press quit to exit the game !");
-
-      const fav_Movie = "war";
-      let guess = prompt("Guess my fav movie ...");
-      while (guess != fav_Movie && guess != "quit") {
-        guess = prompt(" Wrong guess! Plz try Again");
-      }
-      if (guess == fav_Movie) {
-        console.log("guess is correct ! you win");
-      } else {
-        console.log("you Quit");
-      }
-    </script>
+    <script src="fav_movie.js"></script>
   </body>
 </html>
