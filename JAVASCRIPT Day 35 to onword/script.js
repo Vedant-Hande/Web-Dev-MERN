@@ -165,7 +165,6 @@ student.concat(stud);
 (10)[(10, 20, 30, 40, "vedant", 10, 20, 30, 40, "vedant")];
 console.log(student.indexOf("vedant"));
 
-
 console.log(stud.reverse());
 VM201: 1(5)[("vedant", 40, 30, 20, 10)];
 
@@ -227,3 +226,29 @@ lang.reverse();
 (7)[("c#", "php", "javascript", "java", "c++", "c", "sql")];
 console.log(lang.reverse().indexOf("sql"));
 
+const post1 = {
+  username: "vedant",
+  content: "I love coding",
+  likes: 100,
+  repost: 10,
+  comments: ["good", "bad", "average"],
+  shares: 100,
+  views: 1000,
+  tags: ["coding", "programming", "javascript"],
+  isLiked: true,
+  isReposted: true,
+  isCommented: true,
+};
+
+post.post_Number = 1;
+
+post1.post_Names = {
+  post1: "vedant",
+  post2: "vedant",
+  post3: "vedant",
+  post4: "vedant",
+  post5: "vedant",
+  post6: "vedant",
+  post7: "vedant",
+  post8: "vedant",
+};
