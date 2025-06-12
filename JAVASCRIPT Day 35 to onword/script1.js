@@ -558,13 +558,13 @@ let user_prompt = prompt(
 );
 while (random != true) {
   if (user_prompt == "quit") {
-        "you quit the game";
+    console.log("you quit the game");
     break;
   }
   if (user_prompt != random) {
     user_prompt = prompt("Wrong guess! Plz try Again or type 'quit' to exit");
   } else {
-    "guess is correct ! you win" + random;
+    console.log("guess is correct ! you win" + random);
     break;
   }
 }
