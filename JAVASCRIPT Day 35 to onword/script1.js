@@ -341,153 +341,230 @@ Math.round(5.6);
 Math.round(-5.6) - 6;
 Math.round(-5.4) - 5;
 
+undefined;
+Math.random() * 100;
+80.88463841578086;
+Math.floor(Math.random() * 100 + 1);
+6;
+Math.floor(Math.random() * 100);
+30;
+Math.floor(Math.random() * 100);
+54;
+Math.floor(Math.random() * 100);
+62;
+Math.floor(Math.random() * 100);
+90;
+Math.floor(Math.random() * 100);
+13;
+Math.floor(Math.random() * 100);
+65;
+Math.floor(Math.random() * 100);
+77;
+Math.floor(Math.random() * 100);
+19;
+Math.floor(Math.random() * 100);
+25;
+Math.floor(Math.random() * 100);
+45;
+Math.floor(Math.random() * 100);
+21;
+Math.floor(Math.random() * 100);
+51;
+Math.floor(Math.random() * 100);
+44;
+Math.floor(Math.random() * 100);
+64;
+Math.floor(Math.random() * 100);
+24;
+Math.floor(Math.random() * 100);
+28;
+Math.floor(Math.random() * 100);
+8;
+Math.random() * 100;
+94.99051191678014;
+Math.random() * 100;
+56.66676121136097;
+Math.random() * 100;
+28.21641164009837;
+Math.random() * 100;
+65.22317527888842;
+Math.random() * 100;
+93.34080220158106;
+Math.random() * 100;
+76.2203042899087;
+Math.random() * 100;
+9.716763589589817;
+Math.random() * 100;
+29.41257434649296;
+Math.ceil(Math.random() * 100);
+37;
+Math.ceil(Math.random() * 100);
+87;
+Math.ceil(Math.random() * 100);
+42;
+Math.ceil(Math.random() * 100);
+43;
+Math.ceil(Math.random() * 100);
+62;
+Math.ceil(Math.random() * 100);
+49;
+Math.ceil(Math.random() * 100);
+85;
+Math.ceil(Math.random() * 100);
+81;
+Math.ceil(Math.random() * 100);
+58;
+Math.ceil(Math.random() * 100);
+82;
+Math.ceil(Math.random() * 100);
+16;
+Math.ceil(Math.random() * 100);
+70;
+Math.ceil(Math.random() * 100);
+44;
+Math.ceil(Math.random() * 100);
+96;
+Math.ceil(Math.random() * 100);
+7;
+Math.ceil(Math.random() * 100);
+84;
+Math.ceil(Math.random() * 100);
+87;
+Math.ceil(Math.random() * 100);
+1;
+Math.ceil(Math.random() * 100);
+50;
+Math.ceil(Math.random() * 100);
+97;
+Math.ceil(Math.random() * 100);
+72;
+Math.ceil(Math.random() * 100);
+26;
+Math.ceil(Math.random() * 100);
+24;
+Math.ceil(Math.random() * 100);
+63;
+Math.ceil(Math.random() * 100);
+19;
+Math.ceil(Math.random() * 100);
+61;
+Math.ceil(Math.random() * 100);
+2;
+Math.ceil(Math.random() * 100);
+9;
+Math.ceil(Math.random() * 100);
+8;
+Math.ceil(Math.random() * 100);
+11;
+Math.ceil(Math.random() * 100);
+86;
+Math.ceil(Math.random() * 100);
+48;
+Math.ceil(Math.random() * 100);
+67;
+Math.ceil(Math.random() * 100);
+34;
+Math.ceil(Math.random() * 100);
+76;
+Math.ceil(Math.random() * 100);
+34;
+Math.ceil(Math.random() * 100);
+7;
+Math.ceil(Math.random() * 100);
+84;
+Math.ceil(Math.random() * 100);
+96;
+Math.ceil(Math.random() * 100);
+10;
+Math.ceil(Math.random() * 100);
+49;
+Math.ceil(Math.random() * 100);
+2;
+Math.random() * 100;
+34.97528015070402;
+Math.ceil(Math.random() * 100);
+41;
+Math.ceil(Math.random() * 100);
+39;
+Math.ceil(Math.random() * 100);
+100;
+Math.ceil(Math.random() * 100);
+81;
 
-undefined
-Math.random()*100;
-80.88463841578086
-Math.floor(Math.random() *100 +1);
-6
-Math.floor(Math.random() *100 );
-30
-Math.floor(Math.random() *100 );
-54
-Math.floor(Math.random() *100 );
-62
-Math.floor(Math.random() *100 );
-90
-Math.floor(Math.random() *100 );
-13
-Math.floor(Math.random() *100 );
-65
-Math.floor(Math.random() *100 );
-77
-Math.floor(Math.random() *100 );
-19
-Math.floor(Math.random() *100 );
-25
-Math.floor(Math.random() *100 );
-45
-Math.floor(Math.random() *100 );
-21
-Math.floor(Math.random() *100 );
-51
-Math.floor(Math.random() *100 );
-44
-Math.floor(Math.random() *100 );
-64
-Math.floor(Math.random() *100 );
-24
-Math.floor(Math.random() *100 );
-28
-Math.floor(Math.random() *100 );
-8
-Math.random()*100;
-94.99051191678014
-Math.random()*100;
-56.66676121136097
-Math.random()*100;
-28.21641164009837
-Math.random()*100;
-65.22317527888842
-Math.random()*100;
-93.34080220158106
-Math.random()*100;
-76.2203042899087
-Math.random()*100;
-9.716763589589817
-Math.random()*100;
-29.41257434649296
-    Math.ceil(Math.random() *100 );
-37
-    Math.ceil(Math.random() *100 );
-87
-    Math.ceil(Math.random() *100 );
-42
-    Math.ceil(Math.random() *100 );
-43
-    Math.ceil(Math.random() *100 );
-62
-    Math.ceil(Math.random() *100 );
-49
-    Math.ceil(Math.random() *100 );
-85
-    Math.ceil(Math.random() *100 );
-81
-    Math.ceil(Math.random() *100 );
-58
-    Math.ceil(Math.random() *100 );
-82
-    Math.ceil(Math.random() *100 );
-16
-    Math.ceil(Math.random() *100 );
-70
-    Math.ceil(Math.random() *100 );
-44
-    Math.ceil(Math.random() *100 );
-96
-    Math.ceil(Math.random() *100 );
-7
-    Math.ceil(Math.random() *100 );
-84
-    Math.ceil(Math.random() *100 );
-87
-    Math.ceil(Math.random() *100 );
-1
-    Math.ceil(Math.random() *100 );
-50
-    Math.ceil(Math.random() *100 );
-97
-    Math.ceil(Math.random() *100 );
-72
-    Math.ceil(Math.random() *100 );
-26
-    Math.ceil(Math.random() *100 );
-24
-    Math.ceil(Math.random() *100 );
-63
-    Math.ceil(Math.random() *100 );
-19
-    Math.ceil(Math.random() *100 );
-61
-    Math.ceil(Math.random() *100 );
-2
-    Math.ceil(Math.random() *100 );
-9
-    Math.ceil(Math.random() *100 );
-8
-    Math.ceil(Math.random() *100 );
-11
-    Math.ceil(Math.random() *100 );
-86
-    Math.ceil(Math.random() *100 );
-48
-    Math.ceil(Math.random() *100 );
-67
-    Math.ceil(Math.random() *100 );
-34
-    Math.ceil(Math.random() *100 );
-76
-    Math.ceil(Math.random() *100 );
-34
-    Math.ceil(Math.random() *100 );
-7
-    Math.ceil(Math.random() *100 );
-84
-    Math.ceil(Math.random() *100 );
-96
-    Math.ceil(Math.random() *100 );
-10
-    Math.ceil(Math.random() *100 );
-49
-    Math.ceil(Math.random() *100 );
-2
-Math.random()*100;
-34.97528015070402
-    Math.ceil(Math.random() *100 );
-41
-    Math.ceil(Math.random() *100 );
-39
-    Math.ceil(Math.random() *100 );
-100
-    Math.ceil(Math.random() *100 );
-81
+Math.ceil(Math.random() * 5);
+5;
+Math.ceil(Math.random() * 5);
+3;
+Math.ceil(Math.random() * 5);
+3;
+Math.ceil(Math.random() * 5);
+5;
+Math.ceil(Math.random() * 5);
+4;
+Math.ceil(Math.random() * 5);
+4;
+Math.ceil(Math.random() * 5);
+3;
+Math.ceil(Math.random() * 5);
+1;
+Math.ceil(Math.random() * 5);
+1;
+Math.ceil(Math.random() * 5);
+2;
+Math.ceil(Math.random() * 5);
+4;
+Math.ceil(Math.random() * 5);
+4;
+Math.ceil(Math.random() * 5);
+4;
+Math.ceil(Math.random() * 5);
+2;
+Math.ceil(Math.random() * 5);
+4;
+Math.ceil(Math.random() * 5);
+3;
+Math.ceil(Math.random() * 5);
+3;
+Math.ceil(Math.random() * 5);
+5;
+Math.ceil(Math.random() * 5);
+3;
+Math.ceil(Math.random() * 5);
+5;
+Math.ceil(Math.random() * 5);
+1;
+Math.ceil(Math.random() * 5);
+2;
+Math.ceil(Math.random() * 5);
+1;
+Math.ceil(Math.random() * 5);
+5;
+Math.random();
+0.16966710823763187;
+0.16966710823763187 * 5;
+0.8483355411881593;
+Math.ceil(0.8483355411881593);
+1;
+Math.random() * 5;
+2.7708418826287566;
+Math.random() * 5;
+4.820507952224237;
+Math.ceil(2.7708418826287566);
+3;
+const max = prompt("enter the number ");
+const random = Math.floor(Math.random() * max + 1);
+let user_prompt = prompt(
+  "guess the number between 1 to " + max + " or type 'quit' to quit the game  "
+);
+while (random != true) {
+  if (user_prompt == "quit") {
+        "you quit the game";
+    break;
+  }
+  if (user_prompt != random) {
+    user_prompt = prompt("Wrong guess! Plz try Again or type 'quit' to exit");
+  } else {
+    "guess is correct ! you win" + random;
+    break;
+  }
+}
