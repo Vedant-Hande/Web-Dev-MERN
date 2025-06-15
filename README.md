@@ -19,6 +19,6 @@ Here are some of the technologies that I'll include in my MERN joureny:
 ## Let's Connect!
 
 *   [LinkedIn]([www.linkedin.com/in/vedant-hande-a205a62b])
-*   [Portfolio Website]([https://vedantportfolio-ten.vercel.app/])
+*   [Portfolio Website]([https://vedantportfoliowebsite.vercel.app/])
 *   [Email]([vedanthande453@gmail.com])
 
