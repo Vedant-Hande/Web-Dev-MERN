@@ -3,7 +3,7 @@
 
 [ "Full-Stack Developer | Building Web Applications with MERN Stack" or "Passionate Software Engineer | Solving Problems with Code"]
 
-*   Currently learning: [HTML CSS BootStrap Git Github]
+*   Currently learning: [BACKEND]
 
 ## Skills
 
