@@ -124,3 +124,26 @@ evenFunc(10); // This is an even number
 
 let invalidFunc = oddOrEvenTest();
 invalidFunc(5); // Please provide a valid request
+
+// method in js
+const calculator_Object = {
+  add: function (a, b) {
+    return a + b;
+  },
+  sub: function (a, b) {
+    return a - b;
+  },
+  // we can also use methods like this
+  mul(a, b) {
+    return a * b;
+  },
+  div(a, b) {
+    return a / b;
+  },
+};
+
+console.log(calculator_Object);
+console.log(calculator_Object.add(10, 20)); // 30
+console.log(calculator_Object.sub(20, 10)); // 10
+console.log(calculator_Object.mul(10, 20)); // 200
+console.log(calculator_Object.div(20, 10)); // 2
