@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS part 6 Assignment Questions</title>
+  </head>
+  <body>
+    <h1>Assignment Questions ... Check console for your answers</h1>
+    <script>
+      //   1. JavaScript function that returns array elements larger than a given number.
+      const arr = [1, 5, 8, 2, 10, 3, 7].push(4, 6, 9);
+      function largerNumberRetrun(arr, number) {
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > number) {
+            document.write(arr[i]);
+          }
+        }
+      }
+      largerNumberRetrun(arr, 4);
+    </script>
+  </body>
+</html>
