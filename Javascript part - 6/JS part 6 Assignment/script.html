@@ -9,20 +9,70 @@
     <h1>Assignment Questions ... Check console for your answers</h1>
     <script>
       //   1. JavaScript function that returns array elements larger than a given number.
-      const arr = [1, 5, 8, 2, 10, 3, 7].push(4, 6, 9);
-      function largerNumberRetrun(arr, number) {
+      function largerNumber(arr, num) {
         for (let i = 0; i < arr.length; i++) {
-          if (arr[i] > number) {
-            document.write(arr[i]);
+          if (arr[i] > num) {
+            console.log(arr[i]);
           }
         }
       }
-      largerNumberRetrun(arr, 4);
+      const arr = [1, 2, 4, 5, 3, 5];
+      largerNumber(arr, 2);
+
+      // 2.  JavaScript function that extracts unique characters from a string
+      /** First char 'a': ans = "" → indexOf('a') = -1 → add 'a' → ans = "a"
+                      Second char 'b': ans = "a" → indexOf('b') = -1 → add 'b' → ans = "ab"
+                      Third char 'c': ans = "ab" → indexOf('c') = -1 → add 'c' → ans = "abc"
+                      Fourth char 'd': ans = "abc" → indexOf('d') = -1 → add 'd' → ans = "abcd"
+                      Fifth char 'a': ans = "abcd" → indexOf('a') = 0 → skip it (already exists)**/
+
+      function getUniqueChars(str) {
+        //string dont support for each loop
+        let ans = "";
+        for (let i = 0; i < str.length; i++) {
+          let currentChar = str[i];
+          if (ans.indexOf(currentChar) == -1) {
+            ans += currentChar;
+          }
+        }
+        return ans;
+      }
+      console.log(getUniqueChars("hello world"));
+
+      //3. JavaScript function that finds the longest country name from a list.
+      function getLongestCountryName(countries) {
+        let longestName = "";
+
+        for (let country of countries) {
+          if (country.length > longestName.length) {
+            longestName = country;
+          }
+        }
+        // Alternative using a forEach loop: ->
+
+        // countries.forEach((country) => {
+        //   if (country.length > longestName.length) {
+        //     longestName = country;
+        //   }
+        // });
+        return longestName;
+      }
+      const countries = ["Australia", "Germany", "UnitedStatesofAmerica"];
+      console.log(getLongestCountryName(countries)); // Output: "UnitedStatesofAmerica"
+
+      // 4.
+      function vowelCount(str) {
+        let count = 0;
+        let vowel = "aeiouAEIOU";
+        for (let i = 0; i < str.length; i++) {
+          if (vowel.includes(str[i])) {
+            count++;
+          }
+        }
+        return count;
+      }
+      const curStr = "Hello World";
+      console.log(vowelCount(curStr)); // Output: 3
     </script>
   </body>
 </html>
-
-
-function getUniqueChars(str){
-  
-}
