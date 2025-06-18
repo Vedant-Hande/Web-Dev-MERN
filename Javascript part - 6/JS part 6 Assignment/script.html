@@ -59,7 +59,8 @@
       //   }
       // });
 
-      // 4.
+      // 4. count the number of vowels in a string.
+      //    Example: "Hello World" -> 3 vowels (e, o, o
       function vowelCount(str) {
         let count = 0;
         let vowel = "aeiouAEIOU";
@@ -72,6 +73,31 @@
       }
       const curStr = "Hello World";
       console.log(vowelCount(curStr)); // Output: 3
+
+      // object question
+      const person = {
+        Name: "vedant",
+        age: 19,
+        city: "Sangamnear",
+        interest: "coding",
+      };
+      person.city = "NSK";
+      person.country = "India";
+      delete person.interest;
+      console.log(person);
+
+      const methodunderObject = {
+        addi(a, b) {
+          return a + b;
+        },
+        //or like this =>
+        subi: function (a, b) {
+          return a - b;
+        },
+      };
+
+      console.log(methodunderObject.addi(1, 2));
+      console.log(methodunderObject.subi(12, 4));
     </script>
   </body>
 </html>
