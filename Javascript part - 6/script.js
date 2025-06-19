@@ -84,16 +84,15 @@ function highOrderFunc(callback, count) {
     callback();
   }
 }
-
+let num = 5;
 let sayHello = function () {
-  console.log("Hello, World!" + a);
+  console.log("Hello, World!");
 };
+highOrderFunc(sayHello(), num);
 
 highOrderFunc(function () {
   console.log("Hello, Vedant!");
-}, 3);
-
-highOrderFunc(sayHello(), 5);
+}, num);
 
 function oddOrEvenTest(request) {
   if (request == "odd") {
