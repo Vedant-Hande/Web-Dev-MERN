@@ -146,3 +146,35 @@ console.log(calculator_Object.add(10, 20)); // 30
 console.log(calculator_Object.sub(20, 10)); // 10
 console.log(calculator_Object.mul(10, 20)); // 200
 console.log(calculator_Object.div(20, 10)); // 2
+
+const object = {
+  message: "Hello,World!",
+  logMessage() {
+    console.log(this.message);
+    console.log(this); // 'this' refers to the object itself
+  },
+};
+setTimeout(object.logMessage, 1000);
+
+//  19-06-25 Q4. Callbacks with this keyword
+// In this example, the callback function is called with the global context, not the object context
+let length = 4;
+function callback() {
+  console.log(this.length);
+  console.log(this); // 'this' refers to the global object (window in browsers, global in Node.js)
+  // In non-strict mode, this will refer to the global object, which may notx
+}
+callback();
+// logs 4 or undefined depending on the environment
+// const obj = {
+//   length: 5,
+//   method(a) {
+//     callback();
+//   },
+// };
+// obj.method(callback());
+
+/**  method, callback() is called as a regular function, not as a method of any object.
+In non-strict mode, when a function is called like callback(), this refers to the global object (window in browsers, global in Node.js).
+The global object has a property length only in some contexts (like in browsers, window.length is the number of frames, often 0).
+However, in this code, the global variable length = 4 does NOT make window.length = 4. So, in most environments, this.length will be undefined or 0.**/
