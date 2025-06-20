@@ -165,13 +165,6 @@ function callback() {
   // In non-strict mode, this will refer to the global object, which may notx
 }
 callback();
-// logs 4 or undefined depending on the environment
-// const obj = {
-//   length: 5,
-//   method(a) {
-//     callback();
-//   },
-// };
 // obj.method(callback());
 
 /**  method, callback() is called as a regular function, not as a method of any object.
