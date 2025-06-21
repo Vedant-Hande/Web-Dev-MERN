@@ -126,7 +126,7 @@ let evenFunc = oddOrEvenTest("even");
 evenFunc(10); // This is an even number
 
 let invalidFunc = oddOrEvenTest();
-invalidFunc(5); // Please provide a valid request
+invalidFunc(); // Please provide a valid request
 
 // method in js
 const calculator_Object = {
@@ -162,11 +162,10 @@ setTimeout(object.logMessage, 1000);
 
 //  19-06-25 Q4. Callbacks with this keyword
 // In this example, the callback function is called with the global context, not the object context
-let length = 4;
 
 function callback() {
   console.log(this.length);
-  console.log(this); // 'this' refers to the global object (window in browsers, global in Node.js)
+  //  'this' refers to the global object (window in browsers, global in Node.js)
   // In non-strict mode, this will refer to the global object, which may notx
 }
 callback();
@@ -183,5 +182,21 @@ However, in this code, the global variable length = 4 does NOT make window.lengt
 const number = [1, 2, 4, 9, 5, 6, 7, 3];
 
 number.forEach((el) => {
-  return el;
+  console.log("element is  :>> ", el);
 });
+
+// 2. map   -> return the new array
+let arrSec = number.map((el) => {
+  return el * 2;
+});
+
+console.log(arrSec);
+
+// 3. filter -> return the new array with condition
+let arrThi = number.filter((el) => {
+  if (el % 2 === 0) {
+    console.log("Even number is :>> ", el);
+  }
+});
+
+// 4.reduce
