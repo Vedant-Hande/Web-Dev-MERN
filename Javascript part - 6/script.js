@@ -234,4 +234,4 @@ let ans_some = number.some((el) => {
 });
 console.log("ans_some :>> ", ans_some);
 
-// clearInterval(id);
+
