@@ -195,8 +195,38 @@ console.log(arrSec);
 // 3. filter -> return the new array with condition
 let arrThi = number.filter((el) => {
   if (el % 2 === 0) {
-    console.log("Even number is :>> ", el);
+    return el;
   }
 });
+console.log("Even number is :>> ", arrThi);
 
 // 4.reduce
+const number_arr = [6, 4, 8];
+let ans_Reduce = number_arr.reduce((accu, el) => {
+  return accu * el;
+}); // answer ->384
+console.log("The product of all elements is :>> ", ans_Reduce);
+
+// 5. find -> return the first element that matches the condition
+const ans_Find = number_arr.find((el) => {
+  return el > 2;
+}); // answer ->6
+
+console.log("The first element greater than 2 is :>> ", ans_Find);
+
+// 6. findIndex -> return the index of the first element that matches the condition
+const ans_Find_Index = number_arr.findIndex((el) => {
+  return el > 2;
+}); // answer -> 2
+console.log(
+  "The index of the first element greater than 2 is :>> ",
+  ans_Find_Index
+);
+
+// 7. Every -> checks if all elements in the array match the condition and if it match then it returns true otherwise false
+let ans_every = number_arr.every((el) => {
+  return el % 2 == 0;
+});
+console.log("ans_every :>> ", ans_every);
+
+
