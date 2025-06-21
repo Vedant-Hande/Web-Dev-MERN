@@ -151,17 +151,16 @@ console.log(calculator_Object.sub(20, 10)); // 10
 console.log(calculator_Object.mul(10, 20)); // 200
 console.log(calculator_Object.div(20, 10)); // 2
 
+//  19-06-25 Q4. Callbacks with this keyword
+
 const object = {
   message: "Hello,World!",
   logMessage() {
     console.log(this.message);
-    console.log(this); // 'this' refers to the object itself
+    // console.log(this); // 'this' refers to the object itself
   },
 };
-setTimeout(object.logMessage, 1000);
-
-//  19-06-25 Q4. Callbacks with this keyword
-// In this example, the callback function is called with the global context, not the object context
+setTimeout(object.logMessage(), 1000);
 
 function callback() {
   console.log(this.length);
@@ -172,8 +171,8 @@ callback();
 // obj.method(callback());
 
 /**  method, callback() is called as a regular function, not as a method of any object.
-In non-strict mode, when a function is called like callback(), this refers to the global object (window in browsers, global in Node.js).
-The global object has a property length only in some contexts (like in browsers, window.length is the number of frames, often 0).
+ In non-strict mode, when a function is called like callback(), this refers to the global object (window in browsers, global in Node.js).
+ The global object has a property length only in some contexts (like in browsers, window.length is the number of frames, often 0).
 However, in this code, the global variable length = 4 does NOT make window.length = 4. So, in most environments, this.length will be undefined or 0.**/
 
 // Array methods - >
@@ -229,4 +228,10 @@ let ans_every = number_arr.every((el) => {
 });
 console.log("ans_every :>> ", ans_every);
 
+// 8. some -> checks if at least one element in the array matches the condition and if it match then it returns true otherwise false
+let ans_some = number.some((el) => {
+  return el % 15 == 0;
+});
+console.log("ans_some :>> ", ans_some);
 
+// clearInterval(id);
