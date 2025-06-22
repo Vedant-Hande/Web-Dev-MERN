@@ -234,4 +234,38 @@ let ans_some = number.some((el) => {
 });
 console.log("ans_some :>> ", ans_some);
 
+//spread (...)
 
+Math.max(...number);
+// answer -> 9
+console.log("The maximum number is :>> ", Math.max(...number));
+// string spread-> v e d a n t
+console.log(..."VedantHande");
+
+let data = {
+  name: "Vedant Hande",
+  age: 19,
+  city: "Nashik",
+  hobbies: ["coding", "reading", "gaming"],
+};
+let data1 = { ...data, roll: 12345, college: "MIT" };
+console.log("data :>> ", data);
+console.log("data1 :>> ", data1);
+
+// Object.keys() -> returns an array of the object's keys
+// Object.values() -> returns an array of the object's values
+console.log("Keys of data :>> ", Object.keys(data));
+console.log("Keys of data :>> ", Object.keys(data1));
+console.log("Values of data :>> ", Object.values(data));
+console.log("Values of data :>> ", Object.values(data1));
+
+let sampleData = {
+  ...number,
+  ..."hello world",
+  description:
+    "this is a sample data object that convert the array & string into the object",
+};
+
+console.log(sampleData);
+// console.log(...sampleData); we can't spread the object into the console
+console.log(...number);
