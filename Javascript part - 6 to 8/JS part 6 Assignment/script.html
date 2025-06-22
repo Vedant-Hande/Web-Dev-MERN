@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS part 6 Assignment Questions</title>
+  </head>
+  <body>
+    <h1>Assignment Questions ... Check console for your answers</h1>
+    <script>
+      //   1. JavaScript function that returns array elements larger than a given number.
+      function largerNumber(arr, num) {
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > num) {
+            console.log(arr[i]);
+          }
+        }
+      }
+      const arr = [1, 2, 4, 5, 3, 5];
+      largerNumber(arr, 2);
+
+      // 2.  JavaScript function that extracts unique characters from a string
+      /** First char 'a': ans = "" → indexOf('a') = -1 → add 'a' → ans = "a"
+                            Second char 'b': ans = "a" → indexOf('b') = -1 → add 'b' → ans = "ab"
+                            Third char 'c': ans = "ab" → indexOf('c') = -1 → add 'c' → ans = "abc"
+                            Fourth char 'd': ans = "abc" → indexOf('d') = -1 → add 'd' → ans = "abcd"
+                            Fifth char 'a': ans = "abcd" → indexOf('a') = 0 → skip it (already exists)**/
+
+      function getUniqueChar(str) {
+        let ans = "";
+        for (let i = 0; i < str.length; i++) {
+          let curChar = str[i];
+          if (ans.indexOf(curChar) == -1) {
+            ans += curChar;
+          }
+        }
+        return ans;
+      }
+      console.log(getUniqueChar("vedant"));
+
+      //3. JavaScript function that finds the longest country name from a list.
+      function longestCountry(country) {
+        let longest_Country = "";
+        for (let countries of country) {
+          if (countries.length > longest_Country.length) {
+            longest_Country = countries;
+          }
+        }
+        return longest_Country;
+      }
+      const country = ["india", "USA", "AUS", "Indonesia"];
+      console.log(longestCountry(country));
+
+      // Alternative using a forEach loop: ->
+
+      // countries.forEach((country) => {
+      //   if (country.length > longestName.length) {
+      //     longestName = country;
+      //   }
+      // });
+
+      // 4. count the number of vowels in a string.
+      //    Example: "Hello World" -> 3 vowels (e, o, o
+      function vowelCount(str) {
+        let count = 0;
+        let vowel = "aeiouAEIOU";
+        for (let i = 0; i < str.length; i++) {
+          if (vowel.includes(str[i])) {
+            count++;
+          }
+        }
+        return count;
+      }
+      const curStr = "Hello World";
+      console.log(vowelCount(curStr)); // Output: 3
+
+      // object question
+      const person = {
+        Name: "vedant",
+        age: 19,
+        city: "Sangamnear",
+        interest: "coding",
+      };
+      person.city = "NSK";
+      person.country = "India";
+      delete person.interest;
+      console.log(person);
+
+      const methodunderObject = {
+        addi(a, b) {
+          return a + b;
+        },
+        //or like this =>
+        subi: function (a, b) {
+          return a - b;
+        },
+      };
+
+      console.log(methodunderObject.addi(1, 2));
+      console.log(methodunderObject.subi(12, 4));
+    </script>
+  </body>
+</html>
