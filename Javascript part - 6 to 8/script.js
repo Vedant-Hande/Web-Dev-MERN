@@ -199,11 +199,13 @@ let arrThi = number.filter((el) => {
 });
 console.log("Even number is :>> ", arrThi);
 
-// 4.reduce
+// 4.reduce // The reduce method iterates through the array and adds each element to the accumulator
+// and returns the final accumulated value.
 const number_arr = [6, 4, 8];
 let ans_Reduce = number_arr.reduce((accu, el) => {
   return accu * el;
 }); // answer ->384
+
 console.log("The product of all elements is :>> ", ans_Reduce);
 
 // 5. find -> return the first element that matches the condition
@@ -269,3 +271,26 @@ let sampleData = {
 console.log(sampleData);
 // console.log(...sampleData); we can't spread the object into the console
 console.log(...number);
+
+// 2025- 06-23 Assignment
+
+// Q1
+const square = number.map((el) => {
+  return el * el;
+});
+console.log("The square of the number is :>> ", square);
+
+const sum1 = square.reduce((accu, el) => {
+  return accu + el;
+});
+
+console.log("The sum  of the number is :>> ", sum1);
+
+const avg = sum1 / number.length;
+console.log("The average of the number is :>> ", avg);
+
+// reduce is used to sum up all the elements in the array
+// accu is the accumulator that stores the sum of all elements
+// el is the current element in the array
+
+// Q2
