@@ -299,3 +299,23 @@ const q2Ans = number.map((ele) => {
 });
 console.log("The normal array is :>> ", number);
 console.log("The number after adding 5 is :>> ", q2Ans);
+
+// q3
+const q3Ans = strArr.map((ele) => {
+  return ele.toUpperCase();
+});
+console.log("The string array is :>> ", strArr);
+console.log("The string array after uppercase :>> ", q3Ans);
+
+// q4
+const q4Ans = strArr.filter((ele) => {
+  return ele.length > 7;
+});
+console.log("The string array is :>> ", strArr);
+console.log(
+  "The string array after filter condition (ele.length > 5):>> ",
+  q4Ans
+);
+
+// q5
+
