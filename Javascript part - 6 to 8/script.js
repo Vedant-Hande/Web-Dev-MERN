@@ -294,3 +294,8 @@ console.log("The average of the number is :>> ", avg);
 // el is the current element in the array
 
 // Q2
+const q2Ans = number.map((ele) => {
+  return ele + 5;
+});
+console.log("The normal array is :>> ", number);
+console.log("The number after adding 5 is :>> ", q2Ans);
