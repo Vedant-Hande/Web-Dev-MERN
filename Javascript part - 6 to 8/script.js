@@ -319,3 +319,33 @@ console.log(
 
 // q5
 
+const doubleAndReturnArgs = (arr, ...args) => {
+  return {
+    ...arr,
+    ...args.map((el) => {
+      el * 2;
+    }),
+  };
+};
+console.log(
+  "The number array after double and return args :>> ",
+  doubleAndReturnArgs([1, 2, 3], 2, 4, 6, 8)
+);
+
+// q6
+const margeObject = (obj1, obj2) => {
+  return { ...obj1, ...obj2 };
+};
+console.log(
+  "marge object :>>",
+  margeObject(
+    (obj1 = {
+      a: "a",
+      b: "b",
+    }),
+    (obj2 = {
+      c: "c",
+      d: "d",
+    })
+  )
+);
