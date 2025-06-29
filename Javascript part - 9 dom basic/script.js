@@ -75,3 +75,5 @@ accessBtn.style.color = "yellow";
 const prar1 = document.createElement("p");
 prar1.innerHTML = "<b>DELTA 6.0 </b> Apna college";
 mainBody.append(prar1);
+
+
