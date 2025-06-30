@@ -18,3 +18,13 @@ function getRandomColor() {
   let result = `rgb(${red}, ${green}, ${blue})`;
   return result;
 }
+
+// keybord events ->
+
+let textArea = document.querySelector(".text");
+textArea.addEventListener("keydown", function (event) {
+  console.dir(event);
+  if (event.code == "ArrowUp") {
+    console.log("code is arrowup");
+  }
+});
