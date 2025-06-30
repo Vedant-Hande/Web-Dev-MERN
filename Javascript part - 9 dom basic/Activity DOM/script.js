@@ -28,3 +28,12 @@ textArea.addEventListener("keydown", function (event) {
     console.log("code is arrowup");
   }
 });
+
+let form = document.querySelector("form");
+
+form.addEventListener("input", function (event) {
+  event.preventDefault();
+  console.dir(this[0]);
+  console.log(this[0].value);
+  console.log(this[1].value);
+});
