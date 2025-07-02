@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+}
+h1 {
+  margin: 20px;
+  font-weight: 900;
+  font-size: 3rem;
+}
+p {
+  font-size: 2.5rem;
+}
+button {
+  width: 500px;
+  height: 200px;
+  margin: 20px;
+  font-size: 100px;
+  border-radius: 2rem;
+}
+
+.btn1 {
+  background-color: brown;
+}
+
+.btn2 {
+  background-color: blue;
+}
+
+.btn3 {
+  background-color: green;
+}
+
+.btn4 {
+  background-color: yellow;
+}
