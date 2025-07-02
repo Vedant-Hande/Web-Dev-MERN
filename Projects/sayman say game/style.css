@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  /* margin-top: 50px; */
 }
 
 .container {
-  height: 101vh;
+  height: 100vh;
   display: flex;
+  padding-top: 10px;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(120deg, #ffe4b5 0%, #f7cac9 50%, #b5d8ff 100%);
@@ -15,7 +17,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-100px);
   }
   to {
     opacity: 1;
@@ -29,11 +31,12 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-18px);
+    transform: translateY(-15px);
   }
 }
 
 h1 {
+  /* margin-top: 100px; */
   margin: 20px;
   font-weight: 900;
   font-size: 2rem;
