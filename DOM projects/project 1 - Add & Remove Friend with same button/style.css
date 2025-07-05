@@ -19,13 +19,14 @@ body {
   max-width: 1200px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
   gap: 32px;
   align-items: start;
 }
 
 .header {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
   text-align: center;
   margin-bottom: 30px;
   color: white;
