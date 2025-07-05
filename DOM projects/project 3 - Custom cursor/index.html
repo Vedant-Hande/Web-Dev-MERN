@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 3 - Custome cursor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <style>
+      .main {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        cursor: none;
+      }
+      .crsr {
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        position: fixed;
+        mix-blend-mode: difference;
+        pointer-events: none;
+        z-index: 9999;
+        transform: rotate(45deg);
+      }
+      h1 {
+        color: white;
+        font-size: 10rem;
+      }
+      .click-effect {
+        position: fixed;
+        width: 32px;
+        height: 32px;
+        border: 3px solid orange;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        opacity: 0.7;
+        animation: click-animate 0.4s forwards;
+      }
+
+      @keyframes click-animate {
+        to {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>vedant Hande</h1>
+      <div class="crsr"></div>
+    </div>
+    <script>
+      let crsr = document.querySelector(".crsr");
+      window.addEventListener("mousemove", function (dets) {
+        crsr.style.left = dets.x - 12 + "px";
+        crsr.style.top = dets.y - 12 + "px";
+      });
+      window.addEventListener("click", function (dets) {
+        let effect = document.createElement("div");
+        effect.className = "click-effect";
+        effect.style.left = dets.x - 16 + "px";
+        effect.style.top = dets.y - 16 + "px";
+        document.body.appendChild(effect);
+        effect.addEventListener("animationend", function () {
+          effect.remove();
+        });
+      });
+    </script>
+  </body>
+</html>
