@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* Add a modern background gradient */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: aliceblue;
+  font-size: 3rem;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  opacity: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 32px 8px rgba(0, 255, 255, 0.25),
+    0 4px 24px rgba(0, 0, 0, 0.25);
+
+  pointer-events: none;
+  background: #fff;
+  z-index: 2;
+}
+
+img.active {
+  opacity: 1;
+  transform: scale(1.12) rotate(-3deg);
+  border-image-slice: 1;
+  box-shadow: 0 0 48px 12px #00f2fe88, 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.elem {
+  display: flex;
+  position: relative;
+  align-items: center;
+  left: -10px;
+  justify-content: flex-start;
+  height: 90%;
+  border-bottom: 2px solid white;
+  width: 90%;
+  padding-left: 32px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.elem:hover {
+  background: linear-gradient(90deg, #00f2fe22 0%, #4facfe22 100%);
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.08), 0 2px 8px rgba(0, 0, 0, 0.12);
+}
