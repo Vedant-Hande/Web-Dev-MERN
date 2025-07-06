@@ -32,3 +32,15 @@ saveData("hello1")
   .catch((err) => {
     console.error("data is unsaved... " + err);
   });
+
+saveData("hello")
+  .then((data) => {
+    console.log(data);
+    return "Processing data...";
+  })
+  .then((nextStep) => {
+    console.log(nextStep);
+  })
+  .catch((err) => {
+    console.log("Error:", err);
+  });
