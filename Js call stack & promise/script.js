@@ -30,8 +30,9 @@ saveData("hello1")
     console.log("data5 saved ..." + value);
   })
   .catch((err) => {
-    console.error("data is unsaved... " + err);
+    console.error("data is unsaved...  " + err);
   });
+console.log("--------------------------------------------- :>> ");
 
 // saveData("hello")
 //   .then((data) => {
