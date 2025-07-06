@@ -1,10 +1,10 @@
-function saveData() {
+function saveData(data) {
   return new Promise((reslove, reject) => {
     let internetSpeed = Math.floor(Math.random() * 15);
     if (internetSpeed > 4) {
-      reslove("resolve data ");
+      reslove("resolve data " + data);
     } else {
-      reject("reject data");
+      reject("reject data" + data);
     }
   });
 }
@@ -33,16 +33,14 @@ saveData("hello1")
     console.error("data is unsaved... " + err);
   });
 
-saveData("hello")
-  .then((data) => {
-    console.log(data);
-    return "Processing data...";
-  })
-  .then((nextStep) => {
-    console.log(nextStep);
-  })
-  .catch((err) => {
-    console.log("Error:", err);
-  });
-
-
+// saveData("hello")
+//   .then((data) => {
+//     console.log(data);
+//     return "Processing data...";
+//   })
+//   .then((nextStep) => {
+//     console.log(nextStep);
+//   })
+//   .catch((err) => {
+//     console.log("Error:", err);
+//   });
