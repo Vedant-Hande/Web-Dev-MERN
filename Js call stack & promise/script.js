@@ -1,11 +1,13 @@
 function saveData(data) {
   return new Promise((reslove, reject) => {
-    let internetSpeed = Math.floor(Math.random() * 15);
-    if (internetSpeed > 4) {
-      reslove("resolve data " + data);
-    } else {
-      reject("reject data" + data);
-    }
+    setTimeout(() => {
+      let internetSpeed = Math.floor(Math.random() * 15);
+      if (internetSpeed > 4) {
+        reslove("resolve data " + data);
+      } else {
+        reject("reject data" + data);
+      }
+    }, 1000);
   });
 }
 
@@ -52,7 +54,7 @@ async function saveAllData() {
     const res5 = await saveData("hello5");
     console.log(res5);
   } catch (err) {
-    console.error(" Error caught (await):", err);
+    console.log(" Error caught (await):", err);
   }
 }
 
@@ -70,36 +72,36 @@ saveAllData();
 //     console.log("Error:", err);
 //   });
 
-function delay() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("Done");
-    }, 2000);
-  });
-}
+// function delay() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("Done");
+//     }, 2000);
+//   });
+// }
 
-async function run() {
-  console.log("Start");
-  const result = delay(); // not awaited
-  console.log(result); // prints: [object Promise]
-  console.log("End");
-}
+// async function run() {
+//   console.log("Start");
+//   const result = delay(); // not awaited
+//   console.log(result); // prints: [object Promise]
+//   console.log("End");
+// }
 
-run();
+// run();
 
-function delay() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("✅ Delayed Response");
-    }, 2000);
-  });
-}
+// function delay() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("✅ Delayed Response");
+//     }, 2000);
+//   });
+// }
 
-async function run1() {
-  console.log("Start");
-  const result = await delay(); // pauses here for 2 seconds
-  console.log(result); // prints after delay
-  console.log("End");
-}
+// async function run1() {
+//   console.log("Start");
+//   const result = await delay(); // pauses here for 2 seconds
+//   console.log(result); // prints after delay
+//   console.log("End");
+// }
 
-run1();
+// run1();
