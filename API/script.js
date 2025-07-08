@@ -50,12 +50,8 @@ console.log("---------------------------------");
 
 let apis = "https://randomuser.me/api/";
 
-let para = document.querySelector(".result");
-let btn = document.querySelector("button");
-
-btn.addEventListener("click", async () => {
-  let res = await getUser();
-  para.innerHTML = res;
+document.querySelector("button").addEventListener("click", async () => {
+  document.querySelector(".result").innerHTML = await getUser();
 });
 
 async function getUser() {
