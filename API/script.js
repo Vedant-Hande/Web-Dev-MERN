@@ -70,4 +70,15 @@ async function getUser() {
   }
 }
 
+// //using axios
+// axios.get("https://randomuser.me/api/")
+//   .then(response => {
+//     const user = response.data.results[0];
+//     const fullName = `${user.name.title} ${user.name.first} ${user.name.last}`;
+//     console.log("Full Name:", fullName);
+//   })
+//   .catch(error => {
+//     console.error("Error fetching user:", error);
+//   });
+
 
