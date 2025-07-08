@@ -31,6 +31,7 @@ async function getData() {
 }
 getData();
 
+// using loop in api is not good coz api has a specifc limit
 let url1 = "https://randomuser.me/api/";
 for (let i = 1; i <= 5; i++) {
   async function getData() {
