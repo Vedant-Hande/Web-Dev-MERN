@@ -60,9 +60,9 @@ btn.addEventListener("click", async () => {
 
 async function getUser() {
   try {
-    const user = await fetch(apis);
-    const r = await user.json();
-    const fullName = r.results[0].name;
+    const u = await axios.get(apis);
+    const user = u.data.results[0];
+    const fullName = `${user.name.title} ${user.name.first} ${user.name.last}`;
     console.log("Full Name:", fullName);
     return fullName;
   } catch (err) {
@@ -71,14 +71,13 @@ async function getUser() {
 }
 
 // //using axios
-// axios.get("https://randomuser.me/api/")
-//   .then(response => {
+// axios
+//   .get("https://randomuser.me/api/")
+//   .then((response) => {
 //     const user = response.data.results[0];
 //     const fullName = `${user.name.title} ${user.name.first} ${user.name.last}`;
 //     console.log("Full Name:", fullName);
 //   })
-//   .catch(error => {
+//   .catch((error) => {
 //     console.error("Error fetching user:", error);
 //   });
-
-
