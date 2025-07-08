@@ -33,15 +33,41 @@ getData();
 
 // using loop in api is not good coz api has a specifc limit
 let url1 = "https://randomuser.me/api/";
-for (let i = 1; i <= 5; i++) {
-  async function getData() {
-    try {
-      let data = await fetch(url1);
-      let dataAns = await data.json();
-      console.log("data of " + i + "is >> ", dataAns.results[0]);
-    } catch (err) {
-      console.log("err :>> ", err);
-    }
+// for (let i = 1; i <= 5; i++) {
+//   async function getData() {
+//     try {
+//       let data = await fetch(url1);
+//       let dataAns = await data.json();
+//       console.log("data of " + i + "is >> ", dataAns.results[0]);
+//     } catch (err) {
+//       console.log("err :>> ", err);
+//     }
+//   }
+//   getData();
+// }
+
+console.log("---------------------------------");
+
+let apis = "https://randomuser.me/api/";
+
+let para = document.querySelector(".result");
+let btn = document.querySelector("button");
+
+btn.addEventListener("click", async () => {
+  let res = await getUser();
+  para.innerHTML = res;
+});
+
+async function getUser() {
+  try {
+    const user = await fetch(apis);
+    const r = await user.json();
+    const fullName = r.results[0].name;
+    console.log("Full Name:", fullName);
+    return fullName;
+  } catch (err) {
+    console.log("err :>> ", err);
   }
-  getData();
 }
+
+
