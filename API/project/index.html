@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  </head>
+  <body>
+    <div class="cf-app">
+      <aside class="cf-sidebar">
+        <div class="cf-logo" title="College Finder">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <nav class="cf-nav">
+          <ul>
+            <li class="active">
+              <a href="#" id="nav-all" title="All Colleges"
+                ><i class="fa-solid fa-list"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" id="nav-state" title="By State"
+                ><i class="fa-solid fa-map"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" id="nav-city" title="By City"
+                ><i class="fa-solid fa-city"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" id="nav-fav" title="Favourites"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" id="nav-about" title="About"
+                ><i class="fa-solid fa-circle-info"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cf-categories">
+          <ul>
+            <li title="Engineering">
+              <span class="cf-dot eng"></span><i class="fa-solid fa-gears"></i>
+            </li>
+            <li title="Medical">
+              <span class="cf-dot med"></span
+              ><i class="fa-solid fa-stethoscope"></i>
+            </li>
+            <li title="Management">
+              <span class="cf-dot mgmt"></span
+              ><i class="fa-solid fa-briefcase"></i>
+            </li>
+            <li title="Arts">
+              <span class="cf-dot arts"></span
+              ><i class="fa-solid fa-palette"></i>
+            </li>
+            <li title="Science">
+              <span class="cf-dot sci"></span><i class="fa-solid fa-flask"></i>
+            </li>
+            <li title="Law">
+              <span class="cf-dot law"></span
+              ><i class="fa-solid fa-scale-balanced"></i>
+            </li>
+            <li title="Others">
+              <span class="cf-dot other"></span
+              ><i class="fa-solid fa-ellipsis"></i>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="cf-main">
+        <header class="cf-header">
+          <div class="cf-greeting">Welcome, Guest!</div>
+        </header>
+        <section class="cf-search-section">
+          <form
+            id="search-form"
+            autocomplete="off"
+            role="search"
+            aria-label="Search for colleges">
+            <label for="city-input" class="visually-hidden">Search</label>
+            <span class="cf-search-icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              type="text"
+              id="city-input"
+              name="city"
+              placeholder="Search by city, state, or college name"
+              aria-label="Search"
+              required />
+            <button type="submit" id="search-btn" aria-label="Search">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </section>
+        <div id="spinner" class="spinner" aria-live="polite" hidden></div>
+        <section id="results" aria-live="polite" aria-label="Search results">
+          <!-- College cards will be rendered here -->
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
