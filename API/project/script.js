@@ -8,10 +8,8 @@ const spinner = document.getElementById("spinner");
 const navLinks = document.querySelectorAll(".cf-nav a");
 const categoryLinks = document.querySelectorAll(".cf-categories li");
 
-// Modal for college details
 let modal = null;
 
-// State
 let allColleges = [];
 let filteredColleges = [];
 let currentView = "all"; // all, state, city, fav, about
