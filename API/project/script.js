@@ -30,7 +30,6 @@ window.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-// Navigation
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
