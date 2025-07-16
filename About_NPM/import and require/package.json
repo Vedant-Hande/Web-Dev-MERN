@@ -1,0 +1,15 @@
+{
+  "name": "vedant",
+  "version": "1.0.0",
+  "description": "learning import vs require package ",
+  "main": "script.js",
+  "scripts": {
+    "test": "node script.js"
+  },
+  "author": "vedant hande",
+  "license": "ISC",
+  "dependencies": {
+    "random-words": "^2.0.1"
+  },
+  "type": "module"
+}
