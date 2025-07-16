@@ -23,6 +23,5 @@ app.get("/car", (req, res) => {
 
 // 404 Not Found Handler
 app.use((req, res) => {
-  //   res.status(404).send({ error: "Route not found" });
   res.status(404).json({ error: "Route not found" });
 });
