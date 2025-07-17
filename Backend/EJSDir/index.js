@@ -12,5 +12,8 @@ app.listen(port, () => {
 app.set("views", path.join(__dirname, "/views"));
 
 app.get("/", (req, res) => {
-  res.render("home.ejs");
+  let rollDise = Math.ceil(Math.random() * 6);
+  res.render("home.ejs", { rollDise });
+  // res.render("home.ejs", { rollDise: rollDise });
+  // res.render("home.ejs", { dise: rollDise });
 });
