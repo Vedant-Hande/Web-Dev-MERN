@@ -18,9 +18,9 @@ app.get("/ig/:account", (req, res) => {
   res.render("home.ejs", { data: instaData[account] });
 });
 
-// app.get("/", (req, res) => {
-//   let rollDise = Math.ceil(Math.random() * 6);
-//   // res.render("home.ejs", { rollDise });
-//   // res.render("home.ejs", { rollDise: rollDise });
-//   // res.render("home.ejs", { dise: rollDise });
-// });
+app.get("/", (req, res) => {
+  let rollDise = Math.ceil(Math.random() * 6);
+  res.render("rolldise.ejs", { roll: rollDise });
+  // res.render("rollDise.ejs", { rollDise: rollDise });
+  // res.render("rollDise.ejs", { dise: rollDise });
+});

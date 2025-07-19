@@ -51,13 +51,26 @@
   </head>
   <body>
     <div class="profile">
-      <img class="profile-pic" src="<%=  %>" alt="Profile Picture" />
+      <img
+        class="profile-pic"
+        src="<%= data.profile %>"
+        alt="Profile Picture" />
       <div class="username"><%=data.name %></div>
+
+      <p>
+        followers :<%= data.followers %> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        following:<%= data.following %>
+      </p>
     </div>
     <div class="posts">
-      <% data.posts.forEach(function(post) { %>
-      <img class="post-img" src="<%= data.posts.image %>" alt="Post" />
-      <% }); %>
+      <% for(let post of data.posts){ %>
+      <img class="post-img" src="<%= post.image %>" alt="Post" />
+      <p>
+        likes :<%= post.likes %> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        comments:<%= post.comments %>
+      </p>
+
+      <% } %>
     </div>
   </body>
 </html>
