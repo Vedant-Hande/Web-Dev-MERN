@@ -1,12 +1,12 @@
 const express = require("express");
 const path = require("path");
-const instaData = require("./data.json");
+const instaData = require("./data/data.json");
 const app = express();
 
 const port = 3000;
 
 app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(path.join(__dirname, "/public/css")));
 
 app.listen(port, () => {
   console.log("server is listening", port);
