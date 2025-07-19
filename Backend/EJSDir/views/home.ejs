@@ -3,31 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= %>data.name Insta Page</title>
+    <title><%= data.name %> Insta Page</title>
     <link rel="stylesheet" href="/home.css" />
   </head>
   <body>
-    <div class="profile">
-      <img
-        class="profile-pic"
-        src="<%= data.profile %>"
-        alt="Profile Picture" />
-      <div class="username"><%=data.name %></div>
-
-      <p>
-        followers :<%= data.followers %> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-        following:<%= data.following %>
-      </p>
-    </div>
-    <div class="posts">
-      <% for(let post of data.posts){ %>
-      <img class="post-img" src="<%= post.image %>" alt="Post" />
-      <p>
-        likes :<%= post.likes %> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-        comments:<%= post.comments %>
-      </p>
-
-      <% } %>
-    </div>
+    <main class="container">
+      <section class="profile-card">
+        <img
+          class="profile-pic"
+          src="<%= data.profile %>"
+          alt="Profile Picture" />
+        <div class="username"><%= data.name %></div>
+        <div class="profile-stats">
+          <div>
+            <span class="stat-label">Followers</span
+            ><span class="stat-value"><%= data.followers %></span>
+          </div>
+          <div>
+            <span class="stat-label">Following</span
+            ><span class="stat-value"><%= data.following %></span>
+          </div>
+        </div>
+      </section>
+      <section class="posts-grid">
+        <% for(let post of data.posts){ %>
+        <div class="post-card">
+          <img class="post-img" src="<%= post.image %>" alt="Post" />
+          <div class="post-info">
+            <span>❤️ <%= post.likes %></span>
+            <span>💬 <%= post.comments %></span>
+          </div>
+        </div>
+        <% } %>
+      </section>
+    </main>
   </body>
 </html>
