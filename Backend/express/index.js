@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 // query String   ## localhost:3000/search?q=search_query
 
-http: app.get("/search", (req, res) => {
+app.get("/search", (req, res) => {
   let { q } = req.query;
 
   if (q) {
