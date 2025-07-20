@@ -7,12 +7,11 @@ const port = 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "/public/css")));
+app.set("views", path.join(__dirname, "/views"));
 
 app.listen(port, () => {
   console.log("server is listening", port);
 });
-
-app.set("views", path.join(__dirname, "/views"));
 
 app.get("/ig/:account", (req, res) => {
   let { account } = req.params;
