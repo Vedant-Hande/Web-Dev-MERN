@@ -1,3 +1,26 @@
+.add-post {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 700px;
+  margin: 32px auto 0 auto;
+}
+
+.add-post button {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(34,197,94,0.08);
+  transition: background 0.2s;
+}
+
+.add-post button:hover {
+  background: #15803d;
+}
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: #f7f8fa;
@@ -47,4 +70,41 @@ hr {
   border: none;
   border-top: 1px solid #e0e0e0;
   margin: 24px 0;
+}
+
+.post-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.post-actions button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.post-actions button:first-child {
+  background: #2d72d9;
+  color: #fff;
+}
+
+.post-actions button:first-child:hover {
+  background: #1a4e8a;
+}
+
+.post-actions button:last-child {
+  background: #e53e3e;
+  color: #fff;
+}
+
+.post-actions button:last-child:hover {
+  background: #b91c1c;
+}
 }

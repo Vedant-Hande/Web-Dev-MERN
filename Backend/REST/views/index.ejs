@@ -9,13 +9,20 @@
   <body>
     <h1>QUORA POST</h1>
     <hr />
+    <div class="add-post">
+      <button>Add post</button>
+    </div>
     <div class="your-posts">
       <% for(post of posts){ %>
       <h2 class="post-name"><%= post.name %></h2>
       <h3 class="post-title"><%= post.title %></h3>
       <h3 class="post-content"><%= post.content %></h3>
       <hr />
-      <%} %>
+      <div class="post-actions">
+        <button>Edit post</button>
+        <button>Delete post</button>
+      </div>
+      <% } %>
     </div>
   </body>
 </html>
