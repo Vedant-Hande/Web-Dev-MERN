@@ -39,7 +39,6 @@ app.listen(port, () => {
 });
 
 app.get("/posts", (req, res) => {
-  // res.send("server is running");
   res.render("index.ejs", { posts });
 });
 
