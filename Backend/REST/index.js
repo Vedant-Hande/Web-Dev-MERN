@@ -18,19 +18,19 @@ let posts = [
     content: "This is the content of my first post.",
   },
   {
-    name: "John Doe",
-    title: "My First Post",
+    name: "Alice Smith",
+    title: "Exploring Node.js",
+    content: "Quick tips on Node.js development.",
+  },
+  {
+    name: "Tom Brown",
+    title: "Understanding Express.js",
     content: "This is the content of my first post.",
   },
   {
-    name: "John Doe",
-    title: "My First Post",
-    content: "This is the content of my first post.",
-  },
-  {
-    name: "John Doe",
-    title: "My First Post",
-    content: "This is the content of my first post.",
+    name: "sarthak sharma",
+    title: "html css js",
+    content: " This is the content of my first post.",
   },
 ];
 
