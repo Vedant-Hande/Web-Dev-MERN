@@ -49,6 +49,5 @@ app.get("/posts/new", (req, res) => {
 app.post("/posts", (req, res) => {
   let { name, title, content } = req.body;
   posts.push({ name, title, content });
-  res.render("index.ejs", { posts });
+  res.redirect("/posts");
 });
-
