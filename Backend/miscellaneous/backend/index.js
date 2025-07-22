@@ -10,7 +10,8 @@ app.listen(port, () => {
   console.log(`server is listening on port ${port}`);
 });
 
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true })); /// use this midddleware to parse (cant get acces like the get) data goes into the body the body of the post request
+// app.use(express.json()); // use this middleware to parse the json body of the post request
 
 app.get("/register", (req, res) => {
   let { username, password } = req.query;
