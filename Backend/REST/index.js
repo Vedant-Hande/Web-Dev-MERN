@@ -33,6 +33,7 @@ let posts = [
     content: "This is the content of my first post.",
   },
 ];
+
 app.listen(port, () => {
   console.log("app is running on port " + port);
 });

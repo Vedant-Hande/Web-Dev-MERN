@@ -14,7 +14,7 @@
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(34,197,94,0.08);
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.08);
   transition: background 0.2s;
 }
 
@@ -106,5 +106,4 @@ hr {
 
 .post-actions button:last-child:hover {
   background: #b91c1c;
-}
 }
