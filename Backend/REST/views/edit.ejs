@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/edit.css" />
   </head>
   <body>
-    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
-      <h1>Edit Post</h1>
-      <hr />
-      <label for="name">Name:</label>
-      <input type="text" name="name" value="<%= post.name %>" required />
-      <label for="title">Title:</label>
-      <textarea name="title"><%= post.title %></textarea>
-      <label for="content">Content:</label>
-      <textarea name="content"><%= post.content %></textarea>
-      <button type="submit">Update Post</button>
-    </form>
+    <%# This is an EJS comment. send the request to the /post/:id and replce
+    post to patch %>
+
+    <div class="edit-container">
+      <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+        <h1>Edit Post</h1>
+        <hr />
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%= post.name %>" required />
+        <label for="title">Title:</label>
+        <textarea name="title" rows="2"><%= post.title %></textarea>
+        <label for="content">Content:</label>
+        <textarea name="content" rows="5"><%= post.content %></textarea>
+        <button type="submit">Update Post</button>
+      </form>
+    </div>
   </body>
 </html>

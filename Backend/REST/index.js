@@ -59,7 +59,7 @@ app.get("/posts/new", (req, res) => {
 app.post("/posts", (req, res) => {
   let { name, title, content } = req.body;
   let id = uuidv4(); // Generate a unique ID for the post
-  posts.push({ id, name, title, content });
+  posts.unshift({ id, name, title, content });
   res.redirect("/posts");
 });
 
