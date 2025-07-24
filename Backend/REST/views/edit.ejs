@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    //form always use the post to send the data
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+      <h1>Edit Post</h1>
+      <hr />
+      <label for="name">Name:</label>
+      <input type="text" name="name" value="<%= post.name %>" required />
+      <label for="title">Title:</label>
+      <textarea name="title"><%= post.title %></textarea>
+      <label for="content">Content:</label>
+      <textarea name="content"><%= post.content %></textarea>
+      <button type="submit">Update Post</button>
+    </form>
+  </body>
+</html>
