@@ -1,4 +1,3 @@
-const { name } = require("ejs");
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -14,25 +13,25 @@ app.use(express.urlencoded({ extended: true }));
 
 let posts = [
   {
-    id: "a4",
+    id: uuidv4(),
     name: "John Doe",
     title: "My First Post",
     content: "This is the content of my first post.",
   },
   {
-    id: "a3",
+    id: uuidv4(),
     name: "Alice Smith",
     title: "Exploring Node.js",
     content: "Quick tips on Node.js development.",
   },
   {
-    id: "a2",
+    id: uuidv4(),
     name: "Tom Brown",
     title: "Understanding Express.js",
     content: "This is the content of my first post.",
   },
   {
-    id: "a1",
+    id: uuidv4(),
     name: "sarthak sharma",
     title: "html css js",
     content: " This is the content of my first post.",
@@ -52,16 +51,16 @@ app.get("/posts/new", (req, res) => {
 });
 
 app.post("/posts", (req, res) => {
-  let { id, name, title, content } = req.body;
+  let { name, title, content } = req.body;
+  let id = uuidv4(); // Generate a unique ID for the post
   posts.push({ id, name, title, content });
   res.redirect("/posts");
 });
 
 app.get("/posts/:id", (req, res) => {
   let { id } = req.params;
-  let post = posts.find((p) => {
-    return id === p.id;
-  });
+  console.log(id);
+  let post = posts.find((p) => id === p.id);
   console.log(post);
-  res.render("show.ejs", { post });
+  res.render("show.ejs", { post: post });
 });
