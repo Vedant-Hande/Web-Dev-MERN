@@ -90,20 +90,28 @@ hr {
   transition: background 0.2s, color 0.2s;
 }
 
-.post-actions button:first-child {
+/* Specific button colors */
+.btn-edit {
   background: #2d72d9;
   color: #fff;
 }
 
-.post-actions button:first-child:hover {
+.btn-edit:hover {
   background: #1a4e8a;
 }
 
-.post-actions button:last-child {
-  background: #e53e3e;
+.btn-see {
+  background: #22c55e;
   color: #fff;
 }
+.btn-see:hover {
+  background: #15803d;
+}
 
-.post-actions button:last-child:hover {
-  background: #b91c1c;
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+}
+.btn-delete:hover {
+  background: #ce0c0c;
 }

@@ -19,11 +19,15 @@
       <h3 class="post-title"><%= post.title %></h3>
       <hr />
       <div class="post-actions">
-        <a href="/posts/<%= post.id %>"><button>See post</button></a>
-        <a href="/posts/<%= post.id %>/edit"> <button>Edit post</button></a>
+        <a href="/posts/<%= post.id %>"
+          ><button class="btn-see">See Post</button></a
+        >
+        <a href="/posts/<%= post.id %>/edit">
+          <button class="btn-edit">Edit post</button></a
+        >
 
         <form action="/posts/<%= post.id %>?_method=DELETE" method="post">
-          <button>Delete post</button>
+          <button class="btn-delete">Delete post</button>
         </form>
       </div>
       <% } %>
