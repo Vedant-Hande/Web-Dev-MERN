@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="/edit.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Edit Student</h1>
+        <p>Update student information</p>
+      </div>
+
+      <div class="content">
+        <div class="info-text">
+          <strong>Note:</strong> Only fill in the fields you want to update.
+          Leave fields empty to keep the current values.
+        </div>
+
+        <div class="student-id-display">Student ID: <%= student.id %></div>
+
+        <form action="/users/<%= student.id %>?_method=PATCH" method="POST">
+          <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="form-input"
+              placeholder="Enter new username"
+              value="<%= student.username || '' %>" />
+            <div class="field-hint">Leave empty to keep current username</div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="Enter new email"
+              value="<%= student.email || '' %>" />
+            <div class="field-hint">Leave empty to keep current email</div>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" class="btn btn-primary">
+              Update Student
+            </button>
+
+            <a href="/users" class="btn btn-secondary"> Cancel </a>
+
+            <form
+              action="/users/<%= student.id %>?_method=DELETE"
+              method="POST"
+              style="flex: 1">
+              <button
+                type="submit"
+                class="btn btn-danger"
+                onclick="return confirm('Are you sure you want to delete this student?')">
+                Delete Student
+              </button>
+            </form>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

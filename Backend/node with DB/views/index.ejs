@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management Dashboard</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <div class="header">
+        <h1>Student Management Dashboard</h1>
+        <p>Welcome to your comprehensive student database management system</p>
+      </div>
+
+      <div class="content">
+        <div class="stats-card">
+          <div class="student-count" id="studentCount"><%= result %></div>
+          <div class="count-label">Total Students</div>
+          <div class="description">
+            Your database currently contains
+            <strong><%= result %></strong> student records. Manage, add, edit,
+            and organize your student information efficiently.
+          </div>
+
+          <div class="action-buttons">
+            <a href="/users" class="btn btn-primary"> 📊 View All Students </a>
+            <a href="/users/add" class="btn btn-success">
+              ➕ Add New Student
+            </a>
+            <a href="/" class="btn btn-secondary"> 🔄 Refresh Dashboard </a>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <div class="feature-title">Student Management</div>
+            <div class="feature-desc">
+              Add, edit, and delete student records with ease
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <div class="feature-title">Data Viewing</div>
+            <div class="feature-desc">
+              View all student information in organized layouts
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <div class="feature-title">Statistics</div>
+            <div class="feature-desc">
+              Track student count and database statistics
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <div class="feature-title">Secure Database</div>
+            <div class="feature-desc">
+              Safe and reliable MySQL database storage
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          © 2024 Student Management System | Built with Node.js, Express, and
+          MySQL
+        </p>
+      </div>
+    </div>
+
+    <script src="/script/index.js"></script>
+  </body>
+</html>
