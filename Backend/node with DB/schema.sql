@@ -5,6 +5,9 @@
 --     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 -- );
 
-ALTER TABLE student MODIFY COLUMN id VARCHAR(100);
+-- ALTER TABLE student MODIFY COLUMN id VARCHAR(100);
 
--- drop TABLE student;  
+-- drop TABLE student
+-- DELETE FROM student;
+
+SELECT * FROM student;

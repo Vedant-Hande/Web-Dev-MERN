@@ -17,7 +17,6 @@ let getRandomUser = () => {
   ];
 };
 
-// Handle connection errors
 connection.connect((err) => {
   if (err) {
     console.error("Error connecting to MySQL:", err.message);
@@ -25,13 +24,12 @@ connection.connect((err) => {
   }
   console.log("Connected to MySQL successfully!");
 
-  // Execute query after successful connection
-
   let query = "INSERT INTO student (id, username, email) VALUES ?";
   let users = [];
   for (let i = 0; i < 100; i++) {
     users.push(getRandomUser());
   }
+
   connection.query(query, [users], (error, results) => {
     if (error) {
       console.error("Error showing databases:", error.message);
