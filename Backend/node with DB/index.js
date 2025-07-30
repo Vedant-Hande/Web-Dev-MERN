@@ -10,11 +10,11 @@ const connection = mysql.createConnection({
 });
 
 let getRandomUser = () => {
-  return {
-    id: faker.string.uuid(),
-    username: faker.internet.username(),
-    email: faker.internet.email(),
-  };
+  return [
+    faker.string.uuid(),
+    faker.internet.username(),
+    faker.internet.email(),
+  ];
 };
 
 // Handle connection errors
@@ -27,15 +27,17 @@ connection.connect((err) => {
 
   // Execute query after successful connection
 
-  let query = "INSERT INTO users (id, username, email) VALUES ()";
-  let user = [getRandomUser];
-  connection.query(query, user, (error, results) => {
+  let query = "INSERT INTO student (id, username, email) VALUES ?";
+  let users = [];
+  for (let i = 0; i < 100; i++) {
+    users.push(getRandomUser());
+  }
+  connection.query(query, [users], (error, results) => {
     if (error) {
       console.error("Error showing databases:", error.message);
       return;
     }
-    console.log("Available databases:", results);
-    console.log(results[0]);
+    console.log(results);
     connection.end(); // Close the connection
   });
 });
