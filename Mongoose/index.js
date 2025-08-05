@@ -36,12 +36,14 @@ const studentSchema = new mongoose.Schema({
     required: [true, "Phone number is required"],
     match: [/^[\+]?[1-9][\d]{0,15}$/, "Please enter a valid phone number"],
   },
-  dateOfBirth: {
-    type: Date,
-    required: [true, "Date of birth is required"],
-  },
-  
 });
 
 const Student = mongoose.model("Student", studentSchema);
 
+const student3 = new Student({
+  name: "Johnman",
+  email: "johnman@gmail.com",
+  phoneNumber: "+1232361231",
+});
+
+student3.save(); // to save the data in the database
