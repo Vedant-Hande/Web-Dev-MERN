@@ -1,0 +1,743 @@
+crosoft Windows [Version 10.0.19045.3516]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\HANDE>mongosh
+Current Mongosh Log ID: 68921ed6bc9f6ae282eec4a8
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.6
+Using MongoDB:          8.0.12
+Using Mongosh:          2.5.6
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-08-03T20:09:06.101+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show db
+MongoshInvalidInputError: [COMMON-10001] 'db' is not a valid argument for "show".
+test> show dbs
+admin     40.00 KiB
+college  112.00 KiB
+config    48.00 KiB
+local     72.00 KiB
+test> use college
+switched to db college
+college> db.student.find()
+[
+  {
+    _id: ObjectId('688f8af82e7a45bfafeec4a9'),
+    name: 'vedant',
+    age: 19,
+    marks: 91.19
+  },
+  {
+    _id: ObjectId('688f8b382e7a45bfafeec4aa'),
+    name: 'sarthak',
+    city: 'nagar',
+    marks: 89
+  }
+]
+college> db.college.find()
+
+college> show tables
+student
+students
+college> db.students.find()
+[
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4a9'),
+    name: 'Vedant Joshi',
+    age: 19,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 91.19,
+    is_active: true,
+    enrollment_date: ISODate('2024-07-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4aa'),
+    name: 'Sarthak Patil',
+    age: 20,
+    city: 'Ahmednagar',
+    major: 'Mechanical Engineering',
+    marks: 89,
+    is_active: true,
+    enrollment_date: ISODate('2023-08-15T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ab'),
+    name: 'Riya Sharma',
+    age: 18,
+    city: 'Mumbai',
+    major: 'Business Administration',
+    marks: 95.5,
+    is_active: true,
+    enrollment_date: ISODate('2025-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ac'),
+    name: 'Aarav Singh',
+    age: 21,
+    city: 'Pune',
+    major: 'Arts',
+    grade: 'B+',
+    is_active: true,
+    enrollment_date: ISODate('2022-07-25T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ad'),
+    name: 'Sneha Gupta',
+    age: 20,
+    city: 'Nashik',
+    major: 'Biology',
+    marks: 82.3,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-10T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ae'),
+    name: 'Rohan Mehta',
+    age: 22,
+    city: 'Mumbai',
+    major: 'Computer Science',
+    marks: 75,
+    is_active: true,
+    enrollment_date: ISODate('2022-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4af'),
+    name: 'Priya Kulkarni',
+    age: 19,
+    city: 'Pune',
+    major: 'Economics',
+    marks: 92,
+    is_active: true,
+    enrollment_date: ISODate('2024-07-22T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b0'),
+    name: 'Arjun Desai',
+    age: 20,
+    major: 'Civil Engineering',
+    marks: 79.8,
+    is_active: true,
+    enrollment_date: ISODate('2023-09-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b1'),
+    name: 'Diya Reddy',
+    age: 18,
+    city: 'Nagpur',
+    major: 'Psychology',
+    marks: 88.5,
+    is_active: false,
+    enrollment_date: ISODate('2025-07-30T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b2'),
+    name: 'Kabir Verma',
+    age: 21,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 94,
+    is_active: true,
+    enrollment_date: ISODate('2022-08-05T00:00:00.000Z')
+  }
+]
+college> db.students.updateOne({name :"kabir verma"}{$set:{marks: 100});
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:43)
+
+> 1 | db.students.updateOne({name :"kabir verma"}{$set:{marks: 100});
+    |                                            ^
+  2 |
+
+college> db.students.updateOne({name :"kabir verma"},{$set:{marks: 100});
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:62)
+
+> 1 | db.students.updateOne({name :"kabir verma"},{$set:{marks: 100});
+    |                                                               ^
+  2 |
+
+college> db.students.updateOne({name :"kabir verma"}, {$set:{marks: 100});
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:63)
+
+> 1 | db.students.updateOne({name :"kabir verma"}, {$set:{marks: 100});
+    |                                                                ^
+  2 |
+
+college> db.students.updateOne({name :"kabir verma"}, {$set:{marks: 100}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+college> db.students.find()
+[
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4a9'),
+    name: 'Vedant Joshi',
+    age: 19,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 91.19,
+    is_active: true,
+    enrollment_date: ISODate('2024-07-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4aa'),
+    name: 'Sarthak Patil',
+    age: 20,
+    city: 'Ahmednagar',
+    major: 'Mechanical Engineering',
+    marks: 89,
+    is_active: true,
+    enrollment_date: ISODate('2023-08-15T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ab'),
+    name: 'Riya Sharma',
+    age: 18,
+    city: 'Mumbai',
+    major: 'Business Administration',
+    marks: 95.5,
+    is_active: true,
+    enrollment_date: ISODate('2025-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ac'),
+    name: 'Aarav Singh',
+    age: 21,
+    city: 'Pune',
+    major: 'Arts',
+    grade: 'B+',
+    is_active: true,
+    enrollment_date: ISODate('2022-07-25T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ad'),
+    name: 'Sneha Gupta',
+    age: 20,
+    city: 'Nashik',
+    major: 'Biology',
+    marks: 82.3,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-10T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ae'),
+    name: 'Rohan Mehta',
+    age: 22,
+    city: 'Mumbai',
+    major: 'Computer Science',
+    marks: 75,
+    is_active: true,
+    enrollment_date: ISODate('2022-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4af'),
+    name: 'Priya Kulkarni',
+    age: 19,
+    city: 'Pune',
+    major: 'Economics',
+    marks: 92,
+    is_active: true,
+    enrollment_date: ISODate('2024-07-22T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b0'),
+    name: 'Arjun Desai',
+    age: 20,
+    major: 'Civil Engineering',
+    marks: 79.8,
+    is_active: true,
+    enrollment_date: ISODate('2023-09-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b1'),
+    name: 'Diya Reddy',
+    age: 18,
+    city: 'Nagpur',
+    major: 'Psychology',
+    marks: 88.5,
+    is_active: false,
+    enrollment_date: ISODate('2025-07-30T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b2'),
+    name: 'Kabir Verma',
+    age: 21,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 94,
+    is_active: true,
+    enrollment_date: ISODate('2022-08-05T00:00:00.000Z')
+  }
+]
+college> db.students.updateOne({name :"kabir verma"}, {$set:{marks: 80}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+college> db.students.updateOne({name:"kabir verma"}, {$set:{marks: 80}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+college> db.students.updateOne({age:21}, {$set:{marks: 80}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+college> db.students.find()
+[
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4a9'),
+    name: 'Vedant Joshi',
+    age: 19,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 91.19,
+    is_active: true,
+    enrollment_date: ISODate('2024-07-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4aa'),
+    name: 'Sarthak Patil',
+    age: 20,
+    city: 'Ahmednagar',
+    major: 'Mechanical Engineering',
+    marks: 89,
+    is_active: true,
+    enrollment_date: ISODate('2023-08-15T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ab'),
+    name: 'Riya Sharma',
+    age: 18,
+    city: 'Mumbai',
+    major: 'Business Administration',
+    marks: 95.5,
+    is_active: true,
+    enrollment_date: ISODate('2025-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ac'),
+    name: 'Aarav Singh',
+    age: 21,
+    city: 'Pune',
+    major: 'Arts',
+    grade: 'B+',
+    is_active: true,
+    enrollment_date: ISODate('2022-07-25T00:00:00.000Z'),
+    marks: 80
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ad'),
+    name: 'Sneha Gupta',
+    age: 20,
+    city: 'Nashik',
+    major: 'Biology',
+    marks: 82.3,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-10T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ae'),
+    name: 'Rohan Mehta',
+    age: 22,
+    city: 'Mumbai',
+    major: 'Computer Science',
+    marks: 75,
+    is_active: true,
+    enrollment_date: ISODate('2022-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4af'),
+    name: 'Priya Kulkarni',
+    age: 19,
+    city: 'Pune',
+    major: 'Economics',
+    marks: 92,
+    is_active: true,
+    enrollment_date: ISODate('2024-07-22T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b0'),
+    name: 'Arjun Desai',
+    age: 20,
+    major: 'Civil Engineering',
+    marks: 79.8,
+    is_active: true,
+    enrollment_date: ISODate('2023-09-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b1'),
+    name: 'Diya Reddy',
+    age: 18,
+    city: 'Nagpur',
+    major: 'Psychology',
+    marks: 88.5,
+    is_active: false,
+    enrollment_date: ISODate('2025-07-30T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b2'),
+    name: 'Kabir Verma',
+    age: 21,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 94,
+    is_active: true,
+    enrollment_date: ISODate('2022-08-05T00:00:00.000Z')
+  }
+]
+college> db.students.updateMany({city:"pune"}, {$set:{name: "ved"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+college> db.students.updateMany({is_active:true}, {$set:{is_active:false}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 8,
+  modifiedCount: 8,
+  upsertedCount: 0
+}
+college> db.students.find()
+[
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4a9'),
+    name: 'Vedant Joshi',
+    age: 19,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 91.19,
+    is_active: false,
+    enrollment_date: ISODate('2024-07-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4aa'),
+    name: 'Sarthak Patil',
+    age: 20,
+    city: 'Ahmednagar',
+    major: 'Mechanical Engineering',
+    marks: 89,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-15T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ab'),
+    name: 'Riya Sharma',
+    age: 18,
+    city: 'Mumbai',
+    major: 'Business Administration',
+    marks: 95.5,
+    is_active: false,
+    enrollment_date: ISODate('2025-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ac'),
+    name: 'Aarav Singh',
+    age: 21,
+    city: 'Pune',
+    major: 'Arts',
+    grade: 'B+',
+    is_active: false,
+    enrollment_date: ISODate('2022-07-25T00:00:00.000Z'),
+    marks: 80
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ad'),
+    name: 'Sneha Gupta',
+    age: 20,
+    city: 'Nashik',
+    major: 'Biology',
+    marks: 82.3,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-10T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ae'),
+    name: 'Rohan Mehta',
+    age: 22,
+    city: 'Mumbai',
+    major: 'Computer Science',
+    marks: 75,
+    is_active: false,
+    enrollment_date: ISODate('2022-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4af'),
+    name: 'Priya Kulkarni',
+    age: 19,
+    city: 'Pune',
+    major: 'Economics',
+    marks: 92,
+    is_active: false,
+    enrollment_date: ISODate('2024-07-22T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b0'),
+    name: 'Arjun Desai',
+    age: 20,
+    major: 'Civil Engineering',
+    marks: 79.8,
+    is_active: false,
+    enrollment_date: ISODate('2023-09-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b1'),
+    name: 'Diya Reddy',
+    age: 18,
+    city: 'Nagpur',
+    major: 'Psychology',
+    marks: 88.5,
+    is_active: false,
+    enrollment_date: ISODate('2025-07-30T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b2'),
+    name: 'Kabir Verma',
+    age: 21,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 94,
+    is_active: false,
+    enrollment_date: ISODate('2022-08-05T00:00:00.000Z')
+  }
+]
+college> db.students.insertOne({name:"fars", city: "pune", performance:{marks:96,grade:"A"}});
+{
+  acknowledged: true,
+  insertedId: ObjectId('68922327bc9f6ae282eec4a9')
+}
+college> db.students.find()
+[
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4a9'),
+    name: 'Vedant Joshi',
+    age: 19,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 91.19,
+    is_active: false,
+    enrollment_date: ISODate('2024-07-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4aa'),
+    name: 'Sarthak Patil',
+    age: 20,
+    city: 'Ahmednagar',
+    major: 'Mechanical Engineering',
+    marks: 89,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-15T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ab'),
+    name: 'Riya Sharma',
+    age: 18,
+    city: 'Mumbai',
+    major: 'Business Administration',
+    marks: 95.5,
+    is_active: false,
+    enrollment_date: ISODate('2025-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ac'),
+    name: 'Aarav Singh',
+    age: 21,
+    city: 'Pune',
+    major: 'Arts',
+    grade: 'B+',
+    is_active: false,
+    enrollment_date: ISODate('2022-07-25T00:00:00.000Z'),
+    marks: 80
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ad'),
+    name: 'Sneha Gupta',
+    age: 20,
+    city: 'Nashik',
+    major: 'Biology',
+    marks: 82.3,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-10T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ae'),
+    name: 'Rohan Mehta',
+    age: 22,
+    city: 'Mumbai',
+    major: 'Computer Science',
+    marks: 75,
+    is_active: false,
+    enrollment_date: ISODate('2022-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4af'),
+    name: 'Priya Kulkarni',
+    age: 19,
+    city: 'Pune',
+    major: 'Economics',
+    marks: 92,
+    is_active: false,
+    enrollment_date: ISODate('2024-07-22T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b0'),
+    name: 'Arjun Desai',
+    age: 20,
+    major: 'Civil Engineering',
+    marks: 79.8,
+    is_active: false,
+    enrollment_date: ISODate('2023-09-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b1'),
+    name: 'Diya Reddy',
+    age: 18,
+    city: 'Nagpur',
+    major: 'Psychology',
+    marks: 88.5,
+    is_active: false,
+    enrollment_date: ISODate('2025-07-30T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b2'),
+    name: 'Kabir Verma',
+    age: 21,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 94,
+    is_active: false,
+    enrollment_date: ISODate('2022-08-05T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('68922327bc9f6ae282eec4a9'),
+    name: 'fars',
+    city: 'pune',
+    performance: { marks: 96, grade: 'A' }
+  }
+]
+college> db.students.deleteOne({city:"Nagpur"})
+{ acknowledged: true, deletedCount: 1 }
+college> db.students.find()
+[
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4a9'),
+    name: 'Vedant Joshi',
+    age: 19,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 91.19,
+    is_active: false,
+    enrollment_date: ISODate('2024-07-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4aa'),
+    name: 'Sarthak Patil',
+    age: 20,
+    city: 'Ahmednagar',
+    major: 'Mechanical Engineering',
+    marks: 89,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-15T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ab'),
+    name: 'Riya Sharma',
+    age: 18,
+    city: 'Mumbai',
+    major: 'Business Administration',
+    marks: 95.5,
+    is_active: false,
+    enrollment_date: ISODate('2025-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ac'),
+    name: 'Aarav Singh',
+    age: 21,
+    city: 'Pune',
+    major: 'Arts',
+    grade: 'B+',
+    is_active: false,
+    enrollment_date: ISODate('2022-07-25T00:00:00.000Z'),
+    marks: 80
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ad'),
+    name: 'Sneha Gupta',
+    age: 20,
+    city: 'Nashik',
+    major: 'Biology',
+    marks: 82.3,
+    is_active: false,
+    enrollment_date: ISODate('2023-08-10T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4ae'),
+    name: 'Rohan Mehta',
+    age: 22,
+    city: 'Mumbai',
+    major: 'Computer Science',
+    marks: 75,
+    is_active: false,
+    enrollment_date: ISODate('2022-08-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4af'),
+    name: 'Priya Kulkarni',
+    age: 19,
+    city: 'Pune',
+    major: 'Economics',
+    marks: 92,
+    is_active: false,
+    enrollment_date: ISODate('2024-07-22T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b0'),
+    name: 'Arjun Desai',
+    age: 20,
+    major: 'Civil Engineering',
+    marks: 79.8,
+    is_active: false,
+    enrollment_date: ISODate('2023-09-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('688f8e79d49bef3f23eec4b2'),
+    name: 'Kabir Verma',
+    age: 21,
+    city: 'Pune',
+    major: 'Computer Science',
+    marks: 94,
+    is_active: false,
+    enrollment_date: ISODate('2022-08-05T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('68922327bc9f6ae282eec4a9'),
+    name: 'fars',
+    city: 'pune',
+    performance: { marks: 96, grade: 'A' }
+  }
+]
+college>
