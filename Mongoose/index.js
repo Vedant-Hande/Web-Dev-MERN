@@ -12,7 +12,8 @@ main()
     console.log("error connecting to mongoDB", err);
   });
 
-// Student Schema
+// Student Schema ---- strucutre of the data
+// This schema defines the structure of the student data in the MongoDB database
 const studentSchema = new mongoose.Schema({
   // Personal Information
   name: {
@@ -26,10 +27,6 @@ const studentSchema = new mongoose.Schema({
     required: [true, "Email is required"],
     unique: true,
     lowercase: true,
-    // match: [
-    //   /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-    //   "Please enter a valid email",
-    // ],
   },
   phoneNumber: {
     type: String,
