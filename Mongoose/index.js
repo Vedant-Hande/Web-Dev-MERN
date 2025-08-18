@@ -37,11 +37,20 @@ const studentSchema = new mongoose.Schema({
 
 const Student = mongoose.model("Student", studentSchema);
 
-const student5 = new Student({
-  name: "Johnman",
-  email: "johnma35n@gmail.com",
-  phoneNumber: "+1232361231",
-});
+Student.find({})
+  .then((res) => {
+    console.log("All Students:", res);
+  })
+  .catch((err) => {
+    console.log("Error fetching students:", err);
+  });
 
-student5.save(); // to save the data in the database
-console.log("Student saved:", student5);
+// const student5 = new Student({
+//   name: "Johnman",
+//   email: "johnma35n@gmail.com",
+//   phoneNumber: "+1232361231",
+// });
+
+// student5.save(); // to save the data in the database
+
+// console.log("Student saved:", student5);
