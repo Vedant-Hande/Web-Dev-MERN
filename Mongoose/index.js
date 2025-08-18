@@ -42,7 +42,7 @@ const Student = mongoose.model("Student", studentSchema);
 
 const student3 = new Student({
   name: "Johnman",
-  email: "johnman@gmail.com",
+  email: "johnma1n@gmail.com",
   phoneNumber: "+1232361231",
 });
 
