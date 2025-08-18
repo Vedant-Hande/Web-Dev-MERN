@@ -21,6 +21,7 @@ const studentSchema = new mongoose.Schema({
     required: [true, "First name is required"],
     trim: true,
     maxlength: [50, "First name cannot exceed 50 characters"],
+    minlength: [2, "First name must be at least 2 characters"],
   },
   email: {
     type: String,
@@ -64,7 +65,8 @@ Student.findOne({ _id: "68923379a7dbd12d0ad016c1" })
 Student.findOneAndUpdate(
   { _id: "68923379a7dbd12d0ad016c1" },
   { age: 20 },
-  { new: true }
+  { new: true },
+  { runValidators: true } // This option ensures that the update respects the schema validation rules
 )
   .then((res) => {
     console.log("Updated Student:", res);
