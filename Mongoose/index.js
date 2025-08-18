@@ -72,6 +72,17 @@ Student.findOneAndUpdate(
   .catch((err) => {
     console.log("Error updating student:", err);
   });
+Student.findByIdAndUpdate(
+  { _id: "6892360270f31005cd48800d" },
+  { age: 25 },
+  { new: true }
+)
+  .then((res) => {
+    console.log("Updated Student:", res);
+  })
+  .catch((err) => {
+    console.log("Error updating student:", err);
+  });
 
 // const student5 = new Student({
 //   name: "Johnman",
