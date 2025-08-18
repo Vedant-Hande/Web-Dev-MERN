@@ -38,14 +38,17 @@ const studentSchema = new mongoose.Schema({
 const Student = mongoose.model("Student", studentSchema);
 
 // using find() ------
-Student.find({})
+/** Student.find({})
   .then((res) => {
     console.log("Students:", res[0].phoneNumber);
   })
   .catch((err) => {
     console.log("Error fetching students:", err);
-  });
+  });**/
 
+// using findOne() ------
+// This method retrieves a single student document based on the provided criteria
+// In this case, it fetches the student with the specified _id
 Student.findOne({ _id: "68923379a7dbd12d0ad016c1" })
   .then((res) => {
     console.log("Students:", res);

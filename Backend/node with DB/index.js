@@ -129,6 +129,7 @@ app.get("/users/:id/edit", (req, res) => {
   }
 });
 
+// PATCH route to update a student's information
 app.patch("/users/:id", (req, res) => {
   try {
     const studentId = req.params.id;
