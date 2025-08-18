@@ -74,17 +74,23 @@ Student.findOneAndUpdate(
   .catch((err) => {
     console.log("Error updating student:", err.errors.age.property.message);
   });
-// Student.findByIdAndUpdate(
-//   { _id: "6892360270f31005cd48800d" },
-//   { age: 25 },
-//   { new: true }
-// )
-//   .then((res) => {
-//     console.log("Updated Student:", res);
-//   })
-//   .catch((err) => {
-//     console.log("Error updating student:", err);
-//   });
+
+// using findByIdAndUpdate() ----
+// This method updates a student document by its unique identifier (_id)
+// The { new: true } option returns the updated document instead of the original
+// The { runValidators: true } option ensures that the update respects the schema validation rules
+
+Student.findByIdAndUpdate(
+  { _id: "6892360270f31005cd48800d" },
+  { age: 25 },
+  { new: true }
+)
+  .then((res) => {
+    console.log("Updated Student:", res);
+  })
+  .catch((err) => {
+    console.log("Error updating student:", err.errors.age.property.message);
+  });
 
 // using delete ----
 Student.findByIdAndDelete({ _id: "6892360270f31005cd48800d" })
