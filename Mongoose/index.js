@@ -53,4 +53,3 @@ Student.find({})
 
 // student5.save(); // to save the data in the database
 
-// console.log("Student saved:", student5);
