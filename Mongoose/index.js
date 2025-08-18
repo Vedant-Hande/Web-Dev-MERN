@@ -33,6 +33,7 @@ const studentSchema = new mongoose.Schema({
     required: [true, "Phone number is required"],
     match: [/^[\+]?[1-9][\d]{0,15}$/, "Please enter a valid phone number"],
   },
+  age: { type: Number, min: 18, required: [true, "Age is required"] },
 });
 
 const Student = mongoose.model("Student", studentSchema);
@@ -55,6 +56,21 @@ Student.findOne({ _id: "68923379a7dbd12d0ad016c1" })
   })
   .catch((err) => {
     console.log("Error fetching students:", err);
+  });
+
+// using findOneAndUpdate() ------
+// This method updates a single student document based on the provided criteria
+
+Student.findOneAndUpdate(
+  { _id: "68923379a7dbd12d0ad016c1" },
+  { age: 20 },
+  { new: true }
+)
+  .then((res) => {
+    console.log("Updated Student:", res);
+  })
+  .catch((err) => {
+    console.log("Error updating student:", err);
   });
 
 // const student5 = new Student({
