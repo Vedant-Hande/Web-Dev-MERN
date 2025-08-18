@@ -37,9 +37,18 @@ const studentSchema = new mongoose.Schema({
 
 const Student = mongoose.model("Student", studentSchema);
 
+// using find() ------
 Student.find({})
   .then((res) => {
-    console.log("All Students:", res);
+    console.log("Students:", res[0].phoneNumber);
+  })
+  .catch((err) => {
+    console.log("Error fetching students:", err);
+  });
+
+Student.findOne({ _id: "68923379a7dbd12d0ad016c1" })
+  .then((res) => {
+    console.log("Students:", res);
   })
   .catch((err) => {
     console.log("Error fetching students:", err);
@@ -52,4 +61,3 @@ Student.find({})
 // });
 
 // student5.save(); // to save the data in the database
-
