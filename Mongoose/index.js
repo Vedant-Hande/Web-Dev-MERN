@@ -72,7 +72,7 @@ Student.findOneAndUpdate(
     console.log("Updated Student:", res);
   })
   .catch((err) => {
-    console.log("Error updating student:", err);
+    console.log("Error updating student:", err.errors.age.property.message);
   });
 // Student.findByIdAndUpdate(
 //   { _id: "6892360270f31005cd48800d" },
