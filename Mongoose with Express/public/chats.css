@@ -1,0 +1,33 @@
+body {
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+.chats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.chat-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #eee;
+  padding: 16px;
+  width: 300px;
+  background: #fafafa;
+  margin-bottom: 10px;
+}
+.chat-card h3 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+.chat-card h4 {
+  margin: 0 0 10px 0;
+  color: #34495e;
+}
+.chat-card p {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+}
+.chat-card small {
+  color: #888;
+}

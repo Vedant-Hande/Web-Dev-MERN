@@ -8,6 +8,10 @@ const port = 3000;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("views engine", "ejs");
+app.use(express.static("public"));
+
+//middleware to parse data
+app.use(express.urlencoded({ extended: true }));
 
 app.listen(port, () => {
   console.log(`server is listening on port ${port}`);
@@ -25,24 +29,14 @@ main()
     console.log("error connecting to mongoDB", err);
   });
 
+// default route
 app.get("/", (req, res) => {
   res.render("main.ejs");
 });
 
-app.get("/chats")
-
-// Create and save a new chat message
-// let chat_1 = new chat({
-//   From_person: "Alice",
-//   to: "Bob",
-//   msg: "Hello, Bob!",
-// });
-
-// chat_1
-//   .save()
-//   .then((result) => {
-//     console.log("Chat message saved:", result);
-//   })
-//   .catch((err) => {
-//     console.log("Error saving chat message:", err);
-//   });
+// fetch all chats messages route
+app.get("/chats", async (req, res) => {
+  let chats = await chat.find();
+  // console.log(chats);
+  res.render("chats.ejs", { chats });
+});

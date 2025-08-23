@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>your chats</title>
+    <link rel="stylesheet" href="chats.css" />
   </head>
   <body>
-    <h1>Welcome to the chatworld</h1>
+    <h1>Your chats</h1>
+    <div class="chats-container">
+      <% chats.forEach((chat) => { %>
+      <div class="chat-card">
+        <h3>From: <%= chat.From_person %></h3>
+        <h4>To: <%= chat.to %></h4>
+        <p>"<%= chat.msg %>"</p>
+        <small>
+          <% if (chat.created_at) { %> <%= chat.created_at.toLocaleTimeString()
+          %> &nbsp;&nbsp;&nbsp;&nbsp; <%= chat.created_at.toLocaleDateString()
+          %> <% } %>
+        </small>
+      </div>
+      <% }) %>
+    </div>
   </body>
 </html>
