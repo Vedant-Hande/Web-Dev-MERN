@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
+app.set("views engine", "ejs");
 
 app.listen(port, () => {
   console.log(`server is listening on port ${port}`);
@@ -26,20 +26,23 @@ main()
   });
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the Mongoose with Express app!");
+  res.render("main.ejs");
 });
 
-let chat_1 = new chat({
-  From_person: "Alice",
-  to: "Bob",
-  msg: "Hello, Bob!",
-});
+app.get("/chats")
 
-chat_1
-  .save()
-  .then((result) => {
-    console.log("Chat message saved:", result);
-  })
-  .catch((err) => {
-    console.log("Error saving chat message:", err);
-  });
+// Create and save a new chat message
+// let chat_1 = new chat({
+//   From_person: "Alice",
+//   to: "Bob",
+//   msg: "Hello, Bob!",
+// });
+
+// chat_1
+//   .save()
+//   .then((result) => {
+//     console.log("Chat message saved:", result);
+//   })
+//   .catch((err) => {
+//     console.log("Error saving chat message:", err);
+//   });
