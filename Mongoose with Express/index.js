@@ -43,3 +43,15 @@ app.get("/chats", async (req, res) => {
 app.get("/chats/new", (req, res) => {
   res.render("newchat.ejs");
 });
+
+app.post("/chats", async (req, res) => {
+  let { person, to, msg } = req.body;
+  // console.log(person, to, msg);
+  let newchat = new chat({
+    person: person,
+    to: to,
+    msg: msg,
+  });
+  await newchat.save();
+  res.redirect("/chats");
+});

@@ -16,27 +16,27 @@ main()
 // Create multiple chat documents
 const chatData = [
   {
-    From_person: "Alice",
+    person: "Alice",
     to: "Bob",
     msg: "Hello, Bob!",
   },
   {
-    From_person: "Bob",
+    person: "Bob",
     to: "Alice",
     msg: "Hi, Alice!",
   },
   {
-    From_person: "Charlie",
+    person: "Charlie",
     to: "Alice",
     msg: "Hey Alice, how are you?",
   },
   {
-    From_person: "Alice",
+    person: "Alice",
     to: "Charlie",
     msg: "I'm good, Charlie!",
   },
   {
-    From_person: "Dave",
+    person: "Dave",
     to: "Bob",
     msg: "Bob, are you coming to the party?",
   },

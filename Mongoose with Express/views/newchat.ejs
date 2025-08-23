@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>new Chat</title>
-    <link rel="stylesheet" href="/Mongoose with Express/public/newchat.css" />
+    <!-- <link rel="stylesheet" href="/Mongoose with Express/public/newchat.css" /> -->
     <style>
       body {
         background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
@@ -86,10 +86,10 @@
     </style>
   </head>
   <body>
-    <form class="chat-form" method="" action="">
+    <form class="chat-form" method="post" action="/chats">
       <h1>Start a new chat</h1>
-      <label for="from">Sender:</label>
-      <input type="text" id="from" name="from" required />
+      <label for="person">Sender:</label>
+      <input type="text" id="from" name="person" required />
 
       <label for="to">Receiver:</label>
       <input type="text" id="to" name="to" required />

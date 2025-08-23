@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
 
 const chatSchema = new mongoose.Schema({
-  From_person: {
+  person: {
     type: String,
-    required: true,
   },
   to: {
     type: String,
