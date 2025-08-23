@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
+const chat = require("./models/chats");
 
 const app = express();
 const port = 3000;
@@ -13,7 +14,7 @@ app.listen(port, () => {
 });
 
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/whatapp");
+  await mongoose.connect("mongodb://localhost:27017/whatsapp_clone");
 }
 
 main()
@@ -27,3 +28,18 @@ main()
 app.get("/", (req, res) => {
   res.send("Welcome to the Mongoose with Express app!");
 });
+
+let chat_1 = new chat({
+  From_person: "Alice",
+  to: "Bob",
+  msg: "Hello, Bob!",
+});
+
+chat_1
+  .save()
+  .then((result) => {
+    console.log("Chat message saved:", result);
+  })
+  .catch((err) => {
+    console.log("Error saving chat message:", err);
+  });
