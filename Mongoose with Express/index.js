@@ -40,10 +40,12 @@ app.get("/chats", async (req, res) => {
   res.render("chats.ejs", { chats });
 });
 
+// create new chat route
 app.get("/chats/new", (req, res) => {
   res.render("newchat.ejs");
 });
 
+// post route to create new chat
 app.post("/chats", async (req, res) => {
   let { person, to, msg } = req.body;
   let newchat = new chat({
@@ -53,4 +55,11 @@ app.post("/chats", async (req, res) => {
   });
   await newchat.save();
   res.redirect("/chats");
+});
+
+app.get("/chats/:id/edit", async (req, res) => {
+  // console.log(req.params.id);
+  let id = req.params.id;
+  let chats = await chat.findById(id);
+  res.render("edit.ejs", { chats });
 });

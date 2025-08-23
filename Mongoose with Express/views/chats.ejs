@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>your chats</title>
-    <link rel="stylesheet" href="chats.css" />
+    <link rel="stylesheet" href="/chats.css" />
   </head>
   <body>
     <h1>Your chats</h1>
@@ -16,13 +16,16 @@
       <% chats.forEach((chat) => { %>
       <div class="chat-card">
         <h3>From: <%= chat.person %></h3>
-        <h4>To: <%= chat.to %></h4>
+        <h4>To: <%= chats.to %></h4>
         <p>"<%= chat.msg %>"</p>
         <small>
           <% if (chat.created_at) { %> <%= chat.created_at.toLocaleTimeString()
           %> &nbsp;&nbsp;&nbsp;&nbsp; <%= chat.created_at.toLocaleDateString()
           %> <% } %>
         </small>
+        <form mathod="get" action="/chats/<%= chat._id %>/edit">
+          <button>Edit</button>
+        </form>
       </div>
       <% }) %>
     </div>

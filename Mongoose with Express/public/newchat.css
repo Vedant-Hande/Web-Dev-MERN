@@ -1,43 +1,44 @@
 body {
-  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
-  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+.form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
 }
-
-.chat-form {
-  background: #fff;
-  padding: 36px 32px 28px 32px;
+.chat-card {
+  border: 1px solid #e0e0e0;
   border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
-  min-width: 340px;
-  max-width: 400px;
-  width: 100%;
-  border: 1.5px solid #e0e0e0;
+  box-shadow: 0 6px 24px rgba(44, 62, 80, 0.1);
+  padding: 32px 32px 24px 32px;
+  width: 370px;
+  background: linear-gradient(135deg, #fafafa 60%, #e3f0ff 100%);
+  margin-bottom: 10px;
+  transition: box-shadow 0.2s;
 }
-
-.chat-form h1 {
+.chat-card:hover {
+  box-shadow: 0 12px 32px rgba(44, 62, 80, 0.18);
+}
+.chat-card h1 {
   margin-top: 0;
   margin-bottom: 22px;
-  color: #2980b9;
-  font-size: 2em;
+  color: #2c3e50;
+  font-size: 1.7em;
   text-align: center;
   letter-spacing: 1px;
 }
-
-.chat-form label {
+.chat-card label {
   display: block;
   margin-bottom: 7px;
   color: #34495e;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
-
-.chat-form input,
-.chat-form textarea {
+.chat-card input,
+.chat-card textarea {
   width: 100%;
   padding: 10px 12px;
   margin-bottom: 18px;
@@ -48,15 +49,13 @@ body {
   transition: border 0.2s, box-shadow 0.2s;
   box-sizing: border-box;
 }
-
-.chat-form input:focus,
-.chat-form textarea:focus {
+.chat-card input:focus,
+.chat-card textarea:focus {
   border: 1.5px solid #2980b9;
   outline: none;
   box-shadow: 0 0 0 2px #b2e0fb44;
 }
-
-.chat-form button {
+.chat-card button {
   width: 100%;
   padding: 12px 0;
   background: linear-gradient(90deg, #2980b9 60%, #6dd5fa 100%);
@@ -70,8 +69,10 @@ body {
   box-shadow: 0 2px 8px #b2e0fb33;
   letter-spacing: 0.5px;
 }
-
-.chat-form button:hover {
+.chat-card button:hover {
   background: linear-gradient(90deg, #2573a6 60%, #4fc3f7 100%);
   box-shadow: 0 4px 16px #b2e0fb55;
+}
+.chat-card button:active {
+  box-shadow: 0 1px 4px #b2e0fb22;
 }

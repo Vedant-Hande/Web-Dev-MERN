@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edit your Message</title>
+    <link rel="stylesheet" href="/chats.css" />
+  </head>
+  <body>
+    <div class="chat-card">
+      <h3>From: <%= chats.person %></h3>
+      <h4>To: <%= chats.to %></h4>
+      <form method="" action="">
+        <textarea><%= chats.msg %></textarea>
+        <button>Update</button>
+      </form>
+    </div>
+  </body>
+</html>

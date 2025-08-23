@@ -31,3 +31,21 @@ body {
 .chat-card small {
   color: #888;
 }
+
+button {
+  padding: 8px 20px;
+  background: #f4f4f4;
+  color: #222;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: none;
+  transition: background 0.2s, border 0.2s;
+}
+button:hover {
+  background: #eaeaea;
+  border: 1px solid #888;
+}
