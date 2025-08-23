@@ -10,8 +10,8 @@
     <div class="chat-card">
       <h3>From: <%= chats.person %></h3>
       <h4>To: <%= chats.to %></h4>
-      <form method="" action="">
-        <textarea><%= chats.msg %></textarea>
+      <form method="post" action="/chats/<%= chats._id %>?_method=PUT">
+        <textarea name="msg" rows="5" cols="30"><%= chats.msg %></textarea>
         <button>Update</button>
       </form>
     </div>
