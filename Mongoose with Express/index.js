@@ -60,6 +60,7 @@ app.post("/chats", async (req, res) => {
   res.redirect("/chats");
 });
 
+// edit chat route
 app.get("/chats/:id/edit", async (req, res) => {
   // console.log(req.params.id);
   let { id } = req.params;
@@ -67,7 +68,7 @@ app.get("/chats/:id/edit", async (req, res) => {
   res.render("edit.ejs", { chats });
 });
 
-//
+// update chat route
 app.put("/chats/:id", async (req, res) => {
   let id = req.params.id;
   let { msg } = req.body;
@@ -83,6 +84,7 @@ app.put("/chats/:id", async (req, res) => {
   res.redirect("/chats");
 });
 
+// delete chat route
 app.delete("/chats/:id", async (req, res) => {
   let id = req.params.id;
   let chats = await chat.findByIdAndDelete(id);
