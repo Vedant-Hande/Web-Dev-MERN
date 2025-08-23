@@ -23,8 +23,11 @@
           %> &nbsp;&nbsp;&nbsp;&nbsp; <%= chat.created_at.toLocaleDateString()
           %> <% } %>
         </small>
-        <form mathod="get" action="/chats/<%= chat._id %>/edit">
+        <form method="get" action="/chats/<%= chat._id %>/edit">
           <button>Edit</button>
+        </form>
+        <form method="post" action="/chats/<%= chat._id %>?_method=DELETE">
+          <button>Delete</button>
         </form>
       </div>
       <% }) %>

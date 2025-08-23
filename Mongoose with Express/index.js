@@ -79,6 +79,13 @@ app.put("/chats/:id", async (req, res) => {
       new: true,
     }
   );
-  console.log(chats);
+  console.log("edited sucessfully: ", chats);
+  res.redirect("/chats");
+});
+
+app.delete("/chats/:id", async (req, res) => {
+  let id = req.params.id;
+  let chats = await chat.findByIdAndDelete(id);
+  console.log("deleted successfully:", chats);
   res.redirect("/chats");
 });
