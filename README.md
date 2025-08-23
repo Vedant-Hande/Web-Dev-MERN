@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-	<b>Full-Stack Developer | MERN Stack Enthusiast | Problem Solver</b>
+	<b> 19yo | #NoDegree (yet), Just #decoding the language of 0 & 1 daily | #Building1stApp</b>
 </p>
 
 <p align="center">
