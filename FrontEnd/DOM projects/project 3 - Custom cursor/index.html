@@ -3,80 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 3 - Custome cursor</title>
+    <title>Motivational Wallpaper</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet" />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        cursor: none;
+        position: relative;
+        overflow: hidden;
+      }
+
       .main {
-        background-color: black;
+        background: #000000;
         width: 100vw;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        cursor: none;
         position: relative;
       }
+
+      .text {
+        color: white;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .subtitle {
+        color: white;
+        font-size: 6rem;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-align: left;
+        line-height: 1.4;
+        opacity: 0.8;
+        max-width: 300px;
+      }
+
+      .quote {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-align: right;
+        line-height: 1.4;
+        opacity: 0.7;
+        max-width: 300px;
+      }
+
       .crsr {
-        width: 24px;
-        height: 24px;
-        background-color: #fff;
+        width: 20px;
+        height: 20px;
+        background: white;
         position: absolute;
         mix-blend-mode: difference;
         pointer-events: none;
         z-index: 9999;
-        transform: rotate(45deg);
+        border-radius: 50%;
+        transition: all 0.1s ease;
       }
-      h1 {
-        color: white;
-        font-size: 10rem;
-      }
+
       .click-effect {
         position: fixed;
-        width: 32px;
-        height: 32px;
-        border: 3px solid orange;
+        width: 40px;
+        height: 40px;
+        border: 3px solid white;
         border-radius: 50%;
         pointer-events: none;
         z-index: 9999;
         left: 0;
         top: 0;
-        opacity: 0.7;
-        animation: click-animate 0.4s forwards;
+        opacity: 0.8;
+        animation: click-animate 0.6s forwards;
       }
 
       @keyframes click-animate {
         to {
-          transform: scale(2);
+          transform: scale(3);
           opacity: 0;
+        }
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .text {
+          font-size: 1.5rem;
+          letter-spacing: 1px;
+        }
+        .subtitle {
+          font-size: 1.2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .text {
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+        }
+        .subtitle {
+          font-size: 1rem;
+        }
+        .top-left {
+          font-size: 1rem;
+          top: 1rem;
+          left: 1rem;
+          right: 1rem;
+        }
+        .quote {
+          font-size: 0.8rem;
+          bottom: 1rem;
+          right: 1rem;
         }
       }
     </style>
   </head>
   <body>
     <div class="main">
-      <h1>Project 3 </h1>
+      <div class="top-left">
+        You have the power to change your family...Do it only for mom dad
+      </div>
+
+      <div>
+        <div class="subtitle">You are the last hope for your family</div>
+      </div>
+      <div class="quote">
+        "Every day is a new beginning.<br />
+        Take a deep breath and start again."
+      </div>
       <div class="crsr"></div>
     </div>
+
     <script>
       let crsr = document.querySelector(".crsr");
+
       window.addEventListener("mousemove", function (dets) {
-        crsr.style.left = dets.x - 12 + "px";
-        crsr.style.top = dets.y - 12 + "px";
+        crsr.style.left = dets.x - 10 + "px";
+        crsr.style.top = dets.y - 10 + "px";
       });
+
       window.addEventListener("click", function (dets) {
         let effect = document.createElement("div");
         effect.className = "click-effect";
-        effect.style.left = dets.x - 16 + "px";
-        effect.style.top = dets.y - 16 + "px";
+        effect.style.left = dets.x - 20 + "px";
+        effect.style.top = dets.y - 20 + "px";
         document.body.appendChild(effect);
         effect.addEventListener("animationend", function () {
           effect.remove();
