@@ -46,7 +46,6 @@ app.get("/chats/new", (req, res) => {
 
 app.post("/chats", async (req, res) => {
   let { person, to, msg } = req.body;
-  // console.log(person, to, msg);
   let newchat = new chat({
     person: person,
     to: to,
