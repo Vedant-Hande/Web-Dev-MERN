@@ -8,6 +8,10 @@
   </head>
   <body>
     <h1>Your chats</h1>
+    <form method="get" action="/chats/new">
+      <button>new chat</button>
+    </form>
+
     <div class="chats-container">
       <% chats.forEach((chat) => { %>
       <div class="chat-card">
