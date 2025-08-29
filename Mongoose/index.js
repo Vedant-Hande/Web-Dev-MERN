@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const ExpressError = require("../express errors/expressError");
 
 async function main() {
   await mongoose.connect("mongodb://localhost:27017/test");
